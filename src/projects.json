@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "_id": "project1",
+      "title": "Meetup",
+      "imageUrl": "meetupapp.jpg",
+      "caption": "Find events in your city!",
+      "description": "Whether you want to network professionally or discover new social meetup adventures, this serverless, progressive web app uses the Meetup API to fetch upcoming events for a selected city.",
+      "link": "https://d00d1e.github.io/meetupApp/",
+      "github": "https://github.com/d00d1e/meetupApp",
+      "stack": ["React"],
+      "category": "social"
+    },
+    {
+      "_id": "project2",
+      "title": "L'Mau",
+      "imageUrl": "shoppingcart.jpg",
+      "caption": "Feline fashion shopping site",
+      "description": "For all the fashionable felines out there! With just a click of a button to add-to-cart and check-out, this e-commerce site makes shopping easy peasy, like cats on a sunny sunday afternoon. ",
+      "link": "https://lmau-shopping-cart.herokuapp.com/",
+      "github": "https://github.com/d00d1e/react-shopping-cart",
+      "stack": ["MERN"],
+      "category": "utility"
+    },
+    {
+      "_id": "project3",
+      "title": "Daily Tasks",
+      "imageUrl": "todoapp.jpg",
+      "caption": "Daily To-Do List",
+      "description": "Up your productivity with this beautifully simple todo list app that will help keep you organized and on track to tackle all the tasks scheduled for the day.",
+      "link": "https://d00d1e.github.io/js-todo/",
+      "github": "https://github.com/d00d1e/js-todo",
+      "stack": ["JS"],
+      "category": "productivity"
+
+    },
+    {
+      "_id": "project4",
+      "title": "City Weather",
+      "imageUrl": "weatherapp.jpg",
+      "caption": "What's the weather in your city?",
+      "description": "Should you bring a coat? Or wear a T-shirt? Enter your city name and this app will check weather conditions in your city. Uses the OpenWeather API.",
+      "link": "https://d00d1e.github.io/js-weatherApp/",
+      "github": "https://github.com/d00d1e/js-weatherApp",
+      "stack": ["JS"],
+      "category": "utility"
+    },
+    {
+      "_id": "project5",
+      "title": "Drum Kit",
+      "imageUrl": "drumkitapp.jpg",
+      "caption": "Create your own beats",
+      "description": "Patatap is a visual sound kit created by computer programmer, Jono Brandel and Japanese electronic duo Lullatone. This is a Patatap inspired, portable sound kit, where pressing the letters A-L across the keyboard will trigger a different rhythmic sound.",
+      "link": "https://d00d1e.github.io/js-drumkit/",
+      "github": "https://github.com/d00d1e/js-drumkit",
+      "stack": ["JS"],
+      "category": "fun"
+    },
+    {
+      "_id": "project6",
+      "title": "Pokédex",
+      "imageUrl": "pokedexapp.jpg",
+      "caption": "Gen 1. Pokémon Pokêdex",
+      "description": "Explore the stats of your favorite first generation pokémon before each battle. Click a Pokémon's name to see a detailed page with Pokédex data, sprites, evolutions, moves and more! Uses the PokéAPI. Gotta Catch 'Em All!",
+      "link": "https://d00d1e.github.io/react-pokedex/",
+      "github": "https://github.com/d00d1e/react-pokedex",
+      "stack": ["React"],
+      "category": "utility"
+    },
+    {
+      "_id": "project7",
+      "title": "Tic-Tac-Toe",
+      "imageUrl": "tttapp.jpg",
+      "caption": "X vs O game",
+      "description": "An old school paper and pencil game for 2 players, X and O, who take turns marking the spaces on the grid. The player who succeeds in placing 3 of their marks horizonally, vertically or diagonally wins!",
+      "link": "https://tttapp.netlify.app/",
+      "github": "https://github.com/d00d1e/js-TTTApp",
+      "stack": ["JS"],
+      "category": "fun"
+    },
+    {
+      "_id": "project8",
+      "title": "Snake",
+      "imageUrl": "snakeapp.jpg",
+      "caption": "Eat food and grow!",
+      "description": "A retro and nostalgic, monochrome Nokia bar phone inspired snake game. The original Snake was developed and published by Gremlin Industries in 1976 and adapted for the Nokia 6110 phone in 1997 by Taneli Armanto of Nokia. Move and control the snake, eat food to grow longer and avoid collision!",
+      "link": "https://d00d1e.github.io/js-snake/",
+      "github": "https://github.com/d00d1e/js-snake",
+      "stack": ["JS"],
+      "category": "fun"
+    },
+    {
+      "_id": "project9",
+      "title": "Trivia Flashcards",
+      "imageUrl": "flashcardsapp.jpg",
+      "caption": "Test your trivia knowledge!",
+      "description": "In a game of trivia, the competitors are asked questions about interesting but unimportant facts in various subjetcs. Using data from the Open Trivia API, these flashcards are used to train, test and flex your trivia knowledge. Knowledge is Power!",
+      "link": "https://d00d1e.github.io/react-flashcards/",
+      "github": "https://github.com/d00d1e/react-flashcards",
+      "stack": ["React"],
+      "category": "fun"
+    }
+  ]
+}
