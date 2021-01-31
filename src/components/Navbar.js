@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Fade } from 'react-reveal';
-import logo from '../assets/img/8bitheart-64x64.png'
+import logo from '../assets/img/brand-logo64.svg';
+
 
 export default function NavigationBar() {
   return (
     <Fade top>
       <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase py-3 mx-auto">
         <div className="container-fluid">
-          <NavLink className="navbar-brand pl-5" to="/">&lt;<img src={logo} alt="logo"/>/&gt;</NavLink>
+          <NavLink className="navbar-brand pl-5" to="/">&lt;<img src={logo} alt="logo"/> /&gt;</NavLink>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
