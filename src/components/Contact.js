@@ -22,9 +22,9 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="container-fluid my-auto">
-        <h1>
+        <h1 className="mb-5">
           <Typical
-            className="outline text-center mb-5"
+            className="text-center mb-5"
             steps={['Let\'s connect! ☺︎', 3000]}
             loop={1}
           />

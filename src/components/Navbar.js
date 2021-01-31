@@ -6,14 +6,14 @@ import { Fade } from 'react-reveal';
 export default function NavigationBar() {
   return (
     <Fade top>
-      <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase px-5 py-3 mx-auto">
+      <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase py-3 mx-auto">
         <div className="container-fluid">
           <NavLink className="navbar-brand pl-5" to="/">&lt;itsjlee /&gt;</NavLink>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto pr-5">
+          <div className="collapse navbar-collapse pl-5" id="navbarNav">
+            <ul className="navbar-nav ml-auto" data-toggle="collapse" data-target="#navbarNav">
               <li className="nav-item">
                 <NavLink className="nav-link px-4" activeClassName="active" exact to="/about">/About</NavLink>
               </li>
