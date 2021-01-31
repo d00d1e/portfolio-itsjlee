@@ -6,7 +6,7 @@ export default function Footer() {
     <Fade bottom>
       <footer className="w-100 py-4">
         <div className="text-center">
-          <p className="text-muted text-uppercase">&copy;2020 itsjlee</p>
+          <p className="text-muted text-uppercase">&copy;2021 itsjlee</p>
         </div>
       </footer>
     </Fade>

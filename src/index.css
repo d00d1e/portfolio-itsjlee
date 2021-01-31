@@ -103,15 +103,6 @@ section {
 /* HEADER  */
 
 /* NAVBAR */
-/* .navbar {
-  background-color: white;
-} */
-
-.navbar-brand {
-  /* text-shadow: 0.2rem 0.2rem 0.2rem var(--silver); */
-  font-size: 1.5rem;
-}
-
 .navbar a {
   color: var(--silver);
   letter-spacing: 0.2rem;
@@ -333,10 +324,10 @@ section {
 
 .social-media a:hover {
   text-decoration: none;
-  /* background-color: var(--white); */
   color: var(--onyx);
   transform: scale(1.1);
 }
+
 
 
 /* Media Queries */
@@ -348,6 +339,10 @@ section {
   #home p {
     font-size: 1.5rem;
     letter-spacing: 1.2rem;
+  }
+
+  .contact-form {
+    max-width: 30rem;
   }
 }
 
@@ -362,6 +357,10 @@ section {
   }
 
   .social-media a {
-    margin-right: 1.1rem;
+    margin-right: 1rem;
+  }
+
+  .contact-form {
+    max-width: 25rem;
   }
 }

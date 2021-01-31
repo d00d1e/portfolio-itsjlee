@@ -24,7 +24,7 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <div className="row my-auto m-5 pt-5">
+        <div className="row my-auto m-4 mt-5 pt-4">
           <div className="about-img col-xl-6 d-flex justify-content-center align-items-center">
             <Fade>
               <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
@@ -35,7 +35,7 @@ export default class About extends Component {
           </div>
 
           <div className="col-xl-5 my-auto">
-            <div className="about-text outline mb-5 pt-5 ">
+            <div className="about-text outline mb-5 mt-5">
               <Fade>
                 <h1 className="mb-5">
                   <Typical
@@ -44,7 +44,7 @@ export default class About extends Component {
                     loop={1}
                   />
                 </h1>
-                <p className="text-center h4 mt-3 p-5"> I am a full stack web developer based in California. I have a passion for building and optimizing interactive, user-friendly, feature-rich websites and web applications. ☺︎ </p>
+                <p className="text-center h4 mt-3 m-5"> I am a web developer from the Bay Area, CA. I am a team oriented problem solver with a passion for building and optimizing interactive, user-friendly, feature-rich websites and web applications. ☺︎ </p>
               </Fade>
             </div>
             <Fade bottom>
