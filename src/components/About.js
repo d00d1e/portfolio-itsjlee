@@ -44,7 +44,7 @@ export default class About extends Component {
                     loop={1}
                   />
                 </h1>
-                <p className="text-center h4 mt-3 m-5"> I am a web developer from the Bay Area, CA. I am a team oriented problem solver with a passion for building and optimizing interactive, user-friendly, feature-rich websites and web applications. ☺︎ </p>
+                <p className="text-center h4 mt-3 m-2 mb-3"> I am a web developer based in the SF Bay Area. I have a passion for building and optimizing interactive, user-friendly, feature-rich websites and web applications. ☺︎ </p>
               </Fade>
             </div>
             <Fade bottom>
