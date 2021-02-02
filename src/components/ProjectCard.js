@@ -25,12 +25,6 @@ export default class ProjectCard extends Component  {
 
     return (
       <>
-      {/* <div className="category-container">
-        <a href="/#">All</a>
-        <a href="/#">JS</a>
-        <a href="/#">React</a>
-        <a href="/#">Other</a>
-      </div> */}
       <Zoom cascade>
         <ul className="row p-5">
           {projects.map((project) => {
@@ -81,7 +75,7 @@ export default class ProjectCard extends Component  {
                   <div className="embed-responsive embed-responsive-16by9">
                     <iframe
                       title={this.state.activeProject.title}
-                      class="embed-responsive-item"
+                      className="embed-responsive-item"
                       src={this.state.activeProject.link}
                       aria-hidden="true"
                     ></iframe>

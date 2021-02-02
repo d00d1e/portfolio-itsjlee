@@ -1,5 +1,6 @@
 import React, { Component }from 'react';
 import ProjectCard from './ProjectCard';
+// import CategoryNav from "./CategoryNav";
 import data from '../projects';
 
 
@@ -14,8 +15,9 @@ export default class Projects extends Component {
   render() {
     return (
       <section id="projects">
+        {/* <CategoryNav /> */}
         <div className="container-fluid">
-          <div className="row pt-4 pb-4">
+          <div className="row">
             <ProjectCard projects={this.state.projects} />
           </div>
         </div>

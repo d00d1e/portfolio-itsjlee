@@ -9,7 +9,7 @@
       "link": "https://d00d1e.github.io/meetupApp/",
       "github": "https://github.com/d00d1e/meetupApp",
       "stack": ["React"],
-      "category": "social"
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project2",
@@ -20,7 +20,7 @@
       "link": "https://lmau-shopping-cart.herokuapp.com/",
       "github": "https://github.com/d00d1e/react-shopping-cart",
       "stack": ["MERN"],
-      "category": "utility"
+      "category": ["all", "backend"]
     },
     {
       "_id": "project3",
@@ -31,7 +31,7 @@
       "link": "https://d00d1e.github.io/js-todo/",
       "github": "https://github.com/d00d1e/js-todo",
       "stack": ["JS"],
-      "category": "productivity"
+      "category": ["all", "frontend"]
 
     },
     {
@@ -43,7 +43,7 @@
       "link": "https://d00d1e.github.io/js-weatherApp/",
       "github": "https://github.com/d00d1e/js-weatherApp",
       "stack": ["JS"],
-      "category": "utility"
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project5",
@@ -54,7 +54,7 @@
       "link": "https://d00d1e.github.io/js-drumkit/",
       "github": "https://github.com/d00d1e/js-drumkit",
       "stack": ["JS"],
-      "category": "fun"
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project6",
@@ -65,7 +65,7 @@
       "link": "https://d00d1e.github.io/react-pokedex/",
       "github": "https://github.com/d00d1e/react-pokedex",
       "stack": ["React"],
-      "category": "utility"
+      "category": ["all", "backend"]
     },
     {
       "_id": "project7",
@@ -76,7 +76,7 @@
       "link": "https://tttapp.netlify.app/",
       "github": "https://github.com/d00d1e/js-TTTApp",
       "stack": ["JS"],
-      "category": "fun"
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project8",
@@ -87,7 +87,7 @@
       "link": "https://d00d1e.github.io/js-snake/",
       "github": "https://github.com/d00d1e/js-snake",
       "stack": ["JS"],
-      "category": "fun"
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project9",
@@ -98,7 +98,7 @@
       "link": "https://d00d1e.github.io/react-flashcards/",
       "github": "https://github.com/d00d1e/react-flashcards",
       "stack": ["React"],
-      "category": "fun"
+      "category": ["all", "frontend"]
     }
   ]
 }

@@ -21,7 +21,7 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container-fluid my-auto">
+      <div className="container-fluid outline my-auto">
         <h1 className="mb-5">
           <Typical
             className="text-center mb-5"
