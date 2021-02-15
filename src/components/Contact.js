@@ -25,7 +25,7 @@ export default function Contact() {
         <h1 className="mb-5">
           <Typical
             className="text-center mb-5"
-            steps={['Let\'s connect! ☺︎', 3000]}
+            steps={['Let\'s connect! ☺', 3000]}
             loop={1}
           />
         </h1>

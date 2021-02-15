@@ -5,21 +5,21 @@
       "title": "Meetup",
       "imageUrl": "meetupapp.jpg",
       "caption": "Find events in your city!",
-      "description": "Whether you want to network professionally or discover new social meetup adventures, this serverless, progressive web app uses the Meetup API to fetch upcoming events for a selected city.",
+      "description": "This serverless, progressive web app is built with React, implementing test driven development. I use AWS Lambda as the serverless compute service as well as the MeetupAPI to fetch upcoming events for a selected city.",
       "link": "https://d00d1e.github.io/meetupApp/",
       "github": "https://github.com/d00d1e/meetupApp",
-      "stack": ["React"],
+      "stack": ["React | AWS"],
       "category": ["all", "frontend"]
     },
     {
       "_id": "project2",
       "title": "L'Mau",
       "imageUrl": "shoppingcart.jpg",
-      "caption": "Feline fashion shopping site",
-      "description": "For all the fashionable felines out there! With just a click of a button to add-to-cart and check-out, this e-commerce site makes shopping easy peasy, like cats on a sunny sunday afternoon. ",
+      "caption": "Fashion forward feline shopping site",
+      "description": "This full stack e-commerce site makes shopping easy peasy with just a click of a button to add-to-cart and check-out.",
       "link": "https://lmau-shopping-cart.herokuapp.com/",
       "github": "https://github.com/d00d1e/react-shopping-cart",
-      "stack": ["MERN"],
+      "stack": ["MERN | Redux"],
       "category": ["all", "backend"]
     },
     {
@@ -32,40 +32,39 @@
       "github": "https://github.com/d00d1e/js-todo",
       "stack": ["JS"],
       "category": ["all", "frontend"]
-
     },
     {
       "_id": "project4",
-      "title": "City Weather",
-      "imageUrl": "weatherapp.jpg",
-      "caption": "What's the weather in your city?",
-      "description": "Should you bring a coat? Or wear a T-shirt? Enter your city name and this app will check weather conditions in your city. Uses the OpenWeather API.",
-      "link": "https://d00d1e.github.io/js-weatherApp/",
-      "github": "https://github.com/d00d1e/js-weatherApp",
-      "stack": ["JS"],
+      "title": "Omakase",
+      "imageUrl": "sushihomepage.jpg",
+      "caption": "Sushi Restaurant Homepage",
+      "description": "Inspired by my love for anything sushi, this project is a fully responsive website created with html and styled with Material Design for Bootstrap.",
+      "link": "https://d00d1e.github.io/homepage-sushi/",
+      "github": "https://github.com/d00d1e/homepage-sushi",
+      "stack": ["HTML/CSS"],
       "category": ["all", "frontend"]
     },
     {
       "_id": "project5",
-      "title": "Drum Kit",
-      "imageUrl": "drumkitapp.jpg",
-      "caption": "Create your own beats",
-      "description": "Patatap is a visual sound kit created by computer programmer, Jono Brandel and Japanese electronic duo Lullatone. This is a Patatap inspired, portable sound kit, where pressing the letters A-L across the keyboard will trigger a different rhythmic sound.",
-      "link": "https://d00d1e.github.io/js-drumkit/",
-      "github": "https://github.com/d00d1e/js-drumkit",
-      "stack": ["JS"],
-      "category": ["all", "frontend"]
+      "title": "iFlix",
+      "imageUrl": "movieapi.jpg",
+      "caption": "Movie Web API",
+      "description": "This is a full stack movie web application using server-side REST API architecture with Node/Express, data management with mongoose and MongoDB Atlas, client-side interface with REACT, styled with React Bootstrap.",
+      "link": "https://i-flix.herokuapp.com/client/",
+      "github": "https://github.com/d00d1e/movie-api",
+      "stack": ["MERN"],
+      "category": ["all", "backend"]
     },
     {
       "_id": "project6",
       "title": "Pokédex",
       "imageUrl": "pokedexapp.jpg",
-      "caption": "Gen 1. Pokémon Pokêdex",
-      "description": "Explore the stats of your favorite first generation pokémon before each battle. Click a Pokémon's name to see a detailed page with Pokédex data, sprites, evolutions, moves and more! Uses the PokéAPI. Gotta Catch 'Em All!",
+      "caption": "Gen 1. Pokémon Database",
+      "description": "Recreating a fond childhood memory, I built this app with React and data from the PokéAPI. Click on a Pokémon card to see a detailed page with data, sprites, evolutions, moves and more! Gotta Catch 'Em All!",
       "link": "https://d00d1e.github.io/react-pokedex/",
       "github": "https://github.com/d00d1e/react-pokedex",
       "stack": ["React"],
-      "category": ["all", "backend"]
+      "category": ["all", "frontend"]
     },
     {
       "_id": "project7",
@@ -83,7 +82,7 @@
       "title": "Snake",
       "imageUrl": "snakeapp.jpg",
       "caption": "Eat food and grow!",
-      "description": "A retro and nostalgic, monochrome Nokia bar phone inspired snake game. The original Snake was developed and published by Gremlin Industries in 1976 and adapted for the Nokia 6110 phone in 1997 by Taneli Armanto of Nokia. Move and control the snake, eat food to grow longer and avoid collision!",
+      "description": "A retro and nostalgic, monochrome Nokia bar phone inspired snake game developed with vanilla Javascript. It manipulates DOM elements and uses event handlers to detect user input and control game flow. Move (←↑→↓) to control the snake, eat food to grow longer and avoid collision. Play now!",
       "link": "https://d00d1e.github.io/js-snake/",
       "github": "https://github.com/d00d1e/js-snake",
       "stack": ["JS"],
@@ -96,6 +95,17 @@
       "caption": "Test your trivia knowledge!",
       "description": "In a game of trivia, the competitors are asked questions about interesting but unimportant facts in various subjetcs. Using data from the Open Trivia API, these flashcards are used to train, test and flex your trivia knowledge. Knowledge is Power!",
       "link": "https://d00d1e.github.io/react-flashcards/",
+      "github": "https://github.com/d00d1e/react-flashcards",
+      "stack": ["React"],
+      "category": ["all", "frontend"]
+    },
+    {
+      "_id": "project10",
+      "title": "Trivia Flashcards",
+      "imageUrl": "flashcardsapp.jpg",
+      "caption": "Test your trivia knowledge!",
+      "description": "In a game of trivia, the competitors are asked questions about interesting but unimportant facts in various subjetcs. Using data from the Open Trivia API, these flashcards are used to train, test and flex your trivia knowledge. Knowledge is Power!",
+      "link": "https://d00d1e.github.io/js-tetris/",
       "github": "https://github.com/d00d1e/react-flashcards",
       "stack": ["React"],
       "category": ["all", "frontend"]

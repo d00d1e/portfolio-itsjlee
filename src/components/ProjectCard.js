@@ -10,14 +10,21 @@ export default class ProjectCard extends Component  {
       isOpen: false,
       activeProject: ''
     }
+    this.windowOffset = 0
   }
 
   openModal = (project) => {
-    this.setState({ isOpen: true, activeProject: project });
+    this.setState({ isOpen: true, activeProject: project }, () => {
+      this.windowOffset = window.scrollY;
+      document.body.setAttribute('style', `position: fixed; top: -${this.windowOffset}px; left: 0; right: 0;`);
+    });
   }
 
   closeModal = () => {
-    this.setState({ isOpen: false })
+    this.setState({ isOpen: false }, () => {
+      document.body.setAttribute('style', '');
+      window.scrollTo(0, this.windowOffset);
+    });
   }
 
   render() {
@@ -49,30 +56,29 @@ export default class ProjectCard extends Component  {
             <Modal
               isOpen={this.state.isOpen}
               onRequestClose={this.closeModal}
+              preventScroll={true}
+              ariaHideApp={false}
               style={{
                 overlay: {
-                  backgroundColor: 'rgba(0, 0, 0, 0.25)'
+                  backgroundColor: 'rgba(0, 0, 0, 0.25)',
                 },
                 content: {
                   position: 'absolute',
                   top: '50%',
                   left: '50%',
-                  right: 'auto',
+                  right: '30%',
                   bottom: 'auto',
                   marginRight: '-50%',
                   transform: 'translate(-50%, -50%)',
-                  WebkitOverflowScrolling: 'auto',
-                  outline: 'none',
-                  padding: '10px 70px'
                 }
               }}
             >
               <div className="project-details">
                 <div className="d-flex ml-auto">
-                  <button className="modal-button mb-2 text-uppercase" onClick={() => this.closeModal()}>Close</button>
+                  <button className="modal-button p-1 text-uppercase" onClick={() => this.closeModal()}>X</button>
                 </div>
                 <Fade>
-                  <div className="embed-responsive embed-responsive-16by9">
+                  <div className="embed-responsive embed-responsive-21by9">
                     <iframe
                       title={this.state.activeProject.title}
                       className="embed-responsive-item"
@@ -82,17 +88,17 @@ export default class ProjectCard extends Component  {
                   </div>
                 </Fade>
                 <div className="project-details-description">
-                  <h4 className="text-center mt-4 text-uppercase">{this.state.activeProject.title}</h4>
+                  <h4 className="text-center mt-5 text-uppercase">{this.state.activeProject.title}</h4>
                   <h6 className="text-center text-muted">{this.state.activeProject.caption}</h6>
                   <hr/>
-                  <p className="text-center p-4 ml-5 mr-5">{this.state.activeProject.description}</p>
+                  <p className="text-center p-2">{this.state.activeProject.description}</p>
                   <div className="d-flex justify-content-around">
-                    <p>Stack: [ {this.state.activeProject.stack} ]</p>
+                    <p>Stack: {this.state.activeProject.stack} </p>
                     <p className="text-center">
                       <a className="text-uppercase" href={this.state.activeProject.github}>/View Code</a>
                     </p>
                     <p className="text-center">
-                      <a className="text-uppercase" href={this.state.activeProject.link} targe="_blank">/View Full Page</a>
+                      <a className="text-uppercase" href={this.state.activeProject.link} target="_blank" rel="noreferrer">/View Full Page</a>
                     </p>
                   </div>
 

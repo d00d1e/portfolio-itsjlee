@@ -35,13 +35,14 @@ export default class About extends Component {
           </div>
 
           <div className="col-xl-5 my-auto">
-            <div className="about-text outline mb-5 mt-5">
+            <div className="about-text mb-5 mt-5">
               <Fade>
                 <h1 className="mb-5">
                   <Typical
                     className="text-center mb-5"
-                    steps={['Nice to meet you!', 3000]}
+                    steps={['Nice to meet you...', 3000]}
                     loop={1}
+                    wrapper='p'
                   />
                 </h1>
                 <p className="text-center h4 mt-3 m-2 mb-3"> I am a web developer based in the SF Bay Area. I have a passion for building and optimizing interactive, user-friendly, feature-rich websites and web applications. ☺︎ </p>
