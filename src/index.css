@@ -28,10 +28,11 @@ html {
 }
 
 body {
-  font-family: "8bitOperator", sans-serif;
-  color: var(--onyx);
+  height: 100vh;
   min-height: 100%;
   width: 100%;
+  font-family: "8bitOperator", sans-serif;
+  color: var(--onyx);
   overflow: auto;
   overscroll-behavior: none;
   background: url("../src/assets/img/background-img.jpg") no-repeat center
@@ -42,7 +43,10 @@ body {
 a:hover,
 button,
 button:hover,
-img:hover {
+img:hover,
+.navbar-light:hover,
+.navbar-toggler-icon:hover,
+[type="button"]:not(:disabled):hover {
   cursor: url("../src/assets/img/cursor32.svg"), auto;
 }
 
@@ -105,6 +109,10 @@ section {
 }
 
 /* NAVBAR, CATEGORY NAV */
+.navbar-light .navbar-toggler-icon {
+  background-color: transparent;
+  background-position: fixed;
+}
 .navbar a,
 .category-container a {
   color: var(--silver);
@@ -169,6 +177,7 @@ section {
   display: inliine-block;
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
   padding: 1.2rem 3rem;
   background-color: var(--silver);
   border-radius: 0.4rem;
@@ -278,6 +287,7 @@ section {
   padding: 0.7rem 5rem;
   border-radius: 0.4rem;
   color: var(--white);
+  font-size: 1.2rem;
   background-color: var(--silver);
   border: none;
   transition: all 1s ease;
