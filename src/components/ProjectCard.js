@@ -84,7 +84,7 @@ export default class ProjectCard extends Component {
                     bottom: "auto",
                     marginRight: "-50%",
                     transform: "translate(-50%, -50%)",
-                    minheight: "100vh",
+                    minheight: "100%",
                     overflow: "auto",
                   },
                 }}
