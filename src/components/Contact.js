@@ -1,22 +1,29 @@
-import React from 'react'
-import Fade from 'react-reveal';
-import Typical from 'react-typical';
-import emailjs from 'emailjs-com';
-
+import React from "react";
+import Fade from "react-reveal";
+import Typical from "react-typical";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
-
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('gmail', 'template_portfolio', e.target, 'user_koS8SBOLvsk4cPYVwf4Yp')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_portfolio",
+        e.target,
+        "user_koS8SBOLvsk4cPYVwf4Yp"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
-      e.target.reset();
+    e.target.reset();
   }
 
   return (
@@ -25,7 +32,7 @@ export default function Contact() {
         <h1 className="mb-5">
           <Typical
             className="text-center mb-5"
-            steps={['Let\'s connect! ☺', 3000]}
+            steps={["Let's connect! ☺︎", 3000]}
             loop={1}
           />
         </h1>
@@ -73,16 +80,17 @@ export default function Contact() {
                   className="form-control boxshadow"
                   placeholder="Message"
                   required
-                >
-                </textarea>
+                ></textarea>
               </div>
             </div>
           </Fade>
           <Fade bottom>
-            <button className="text-uppercase mt-5" type="submit">Send </button>
+            <button className="text-uppercase mt-5" type="submit">
+              Send{" "}
+            </button>
           </Fade>
         </form>
       </div>
     </section>
-  )
+  );
 }
