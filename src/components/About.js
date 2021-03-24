@@ -52,7 +52,7 @@ export default class About extends Component {
               <h1 className="mb-5">
                 <Typical
                   className="text-center mb-5"
-                  steps={["Nice to meet you...", 3000]}
+                  steps={["Nice to meet you.", 3000]}
                   loop={1}
                   wrapper="p"
                 />

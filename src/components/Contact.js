@@ -28,7 +28,7 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container-fluid outline my-auto">
+      <div className="container-fluid my-auto">
         <h1 className="mb-5">
           <Typical
             className="text-center mb-5"
@@ -55,7 +55,7 @@ export default function Contact() {
                   type="text"
                   name="company"
                   className="form-control boxshadow"
-                  placeholder="Company"
+                  placeholder="Subject"
                   required
                 />
               </div>

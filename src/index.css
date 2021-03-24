@@ -28,15 +28,16 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   min-height: 100%;
-  width: 100%;
+  width: 100vw;
   font-family: "8bitOperator", sans-serif;
   color: var(--onyx);
   overflow: auto;
+  overflow-x: hidden;
   overscroll-behavior: none;
-  background: url("../src/assets/img/background-img.jpg") no-repeat center;
-  background-size: cover;
+  background: url("../src/assets/img/background-img.jpg") no-repeat center
+    center/cover;
 }
 
 a:hover,
@@ -91,20 +92,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: url("../src/assets/img/background-img.jpg") no-repeat center
-    center fixed;
-  background-size: cover;
+  position: relative;
 }
 
 #preloader h1 {
-  font-size: 6rem;
+  position: absolute;
+  font-size: 4.5rem;
   color: var(--onyx);
-  text-shadow: 0.2rem 0.2rem 0.2rem var(--silver);
-
-  -webkit-box-shadow: 13px 15px 15px 1px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow: 13px 15px 15px 1px rgba(0, 0, 0, 0.28);
-  box-shadow: 13px 15px 15px 1px rgba(0, 0, 0, 0.28);
+  transform: translateY(-70%);
 }
 
 /* NAVBAR, CATEGORY NAV */
@@ -175,7 +170,7 @@ section {
   font-size: 1.2rem;
   padding: 1.2rem 3rem;
   background-color: var(--silver);
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.28);
   transition: all 1s ease;
 }
@@ -255,7 +250,7 @@ section {
   color: var(--onyx);
   font-size: 1.1rem;
   text-shadow: 0.2px 0.2px 0.5px var(--silver);
-  transform: scale(1.2);
+  transform: scale(1.09);
 }
 
 .embed-responsive {
@@ -280,7 +275,7 @@ section {
   display: block;
   margin: 0 auto;
   padding: 0.7rem 5rem;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   color: var(--white);
   font-size: 1.2rem;
   background-color: var(--silver);
@@ -291,7 +286,6 @@ section {
 
 .contact-form button:hover {
   background-color: var(--onyx);
-  /* transform: scale(2.1); */
   cursor: url("../src/assets/img/cursor32.svg"), auto;
 }
 
@@ -319,7 +313,7 @@ section {
   transform: scale(1.1);
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-collapse {
     height: auto !important;

@@ -16,21 +16,21 @@
       "title": "L'Mau",
       "imageUrl": "shoppingcart.jpg",
       "caption": "Fashion forward feline shopping site",
-      "description": "This is a full stack e-commerce shopping site with created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with Bootstrap.",
+      "description": "This is a full stack e-commerce shopping site created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with Bootstrap.",
       "link": "https://lmau-shopping-cart.herokuapp.com/",
       "github": "https://github.com/d00d1e/react-shopping-cart",
       "stack": ["MERN | Redux"],
-      "category": ["all", "backend"]
+      "category": ["all", "frontend", "backend"]
     },
     {
       "_id": "project3",
-      "title": "Daily Tasks",
-      "imageUrl": "todoapp.jpg",
-      "caption": "Daily To-Do List",
-      "description": "Keep track of all your tasks with this beautiful javascript todo list app. It may be simple but there is a conitnuing need to showcase the amazing powers of CSS. I'm quite proud of this one.",
-      "link": "https://d00d1e.github.io/js-todo/",
-      "github": "https://github.com/d00d1e/js-todo",
-      "stack": ["JS | CSS"],
+      "title": "Chanel",
+      "imageUrl": "chanellanding.jpg",
+      "caption": "Landing Page",
+      "description": "This is a landing page for Chanel perfume built with HTML, CSS and Lightbox.js. It features responsive design and a css grid image gallery.",
+      "link": "https://d00d1e.github.io/landing-page-chanel/",
+      "github": "https://github.com/d00d1e/landing-page-chanel",
+      "stack": ["HTML | CSS | Lightbox"],
       "category": ["all", "frontend"]
     },
     {
@@ -38,7 +38,7 @@
       "title": "Omakase",
       "imageUrl": "sushihomepage.jpg",
       "caption": "Restaurant Homepage",
-      "description": "Inspired by my love for anything sushi, this project is a fully responsive website created with html and styled with Material Design for Bootstrap and custom css.",
+      "description": "Inspired by my love for anything sushi, this project is a fully responsive website created with HTML and styled with Material Design for Bootstrap and custom css.",
       "link": "https://d00d1e.github.io/homepage-sushi/",
       "github": "https://github.com/d00d1e/homepage-sushi",
       "stack": ["HTML/CSS"],
@@ -68,14 +68,14 @@
     },
     {
       "_id": "project7",
-      "title": "Tic-Tac-Toe",
-      "imageUrl": "tttapp.jpg",
-      "caption": "X vs O game",
-      "description": "This classic, old school paper and pencil game is created with Javscript only. This is the first game I built when I was learning to code. It uses conditionals to track players and game state. Its very basic and pales in comparison to my other projects but its a reminder of how far I've come :)",
-      "link": "https://tttapp.netlify.app/",
-      "github": "https://github.com/d00d1e/js-TTTApp",
-      "stack": ["JS"],
-      "category": ["all", "frontend"]
+      "title": "Folia",
+      "imageUrl": "folia.jpg",
+      "caption": "Online PLant Shop",
+      "description": "I'm not allowed to buy anymore houseplants so I created this MERN e-commerce site as my plant fix (for now). It features login authentication, user/order/product management and also payment methods with PayPal.",
+      "link": "https://folia-app.herokuapp.com/",
+      "github": "https://github.com/d00d1e/folia",
+      "stack": ["MERN"],
+      "category": ["all", "frontend", "backend"]
     },
     {
       "_id": "project8",
@@ -90,13 +90,13 @@
     },
     {
       "_id": "project9",
-      "title": "Tetris",
-      "imageUrl": "tetris.jpg",
-      "caption": "Tile matching game",
-      "description": "Another one of my favorite games growing up, this pure Javascript tetris clone showcases basic js methods, as well as DOM manipulations and user events to move game pieces. Press (←↓→, space) to control the tetrominoes. Play now!",
-      "link": "https://d00d1e.github.io/js-tetris/",
-      "github": "https://github.com/d00d1e/js-tetris",
-      "stack": ["JS"],
+      "title": "Moose Y. Lee",
+      "imageUrl": "mooseportfolio.jpg",
+      "caption": "Portfolio",
+      "description": "I've created at least 7 versions of my portfolio website was never quite satisfied with the results. So I created yet another one but this time I made it for a 'friend'. It is a fully responsive website with HTML, CSS and JS",
+      "link": "https://d00d1e.github.io/moose-portfolio/",
+      "github": "https://github.com/d00d1e/moose-portfolio",
+      "stack": ["HTML | CSS | JS"],
       "category": ["all", "frontend"]
     }
   ]

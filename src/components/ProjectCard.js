@@ -125,6 +125,8 @@ export default class ProjectCard extends Component {
                         <a
                           className="text-uppercase"
                           href={this.state.activeProject.github}
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           /View Code
                         </a>

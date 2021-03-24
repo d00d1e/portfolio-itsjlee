@@ -1,15 +1,14 @@
-import React, { Component }from 'react';
-import ProjectCard from './ProjectCard';
+import React, { Component } from "react";
+import ProjectCard from "./ProjectCard";
 // import CategoryNav from "./CategoryNav";
-import data from '../projects';
-
+import data from "../projects";
 
 export default class Projects extends Component {
   constructor() {
     super();
     this.state = {
-      projects: data.projects
-    }
+      projects: data.projects,
+    };
   }
 
   render() {
@@ -22,6 +21,6 @@ export default class Projects extends Component {
           </div>
         </div>
       </section>
-    )
-  };
+    );
+  }
 }
