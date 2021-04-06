@@ -9,9 +9,7 @@ export default function NavigationBar() {
       <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase mx-auto py-4">
         <div className="container-fluid">
           <NavLink className="navbar-brand pl-5" to="/">
-            &lt;
             <img src={logo} alt="logo" />
-            /&gt;
           </NavLink>
           <button
             className="navbar-toggler"
@@ -40,7 +38,7 @@ export default function NavigationBar() {
                   exact
                   to="/about"
                 >
-                  /About
+                  About
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -50,7 +48,7 @@ export default function NavigationBar() {
                   exact
                   to="/projects"
                 >
-                  /Portfolio
+                  Portfolio
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -60,7 +58,7 @@ export default function NavigationBar() {
                   exact
                   to="/contact"
                 >
-                  /Contact
+                  Contact
                 </NavLink>
               </li>
             </ul>

@@ -6,16 +6,16 @@ export default function Home() {
   return (
     <div className="bg">
       <section id="home">
-        <div className="container my-auto">
+        <div className="home-content container my-auto">
           <Bounce left>
-            <h2 className="text-left pl-5">Hi!</h2>
+            <h2 className="text-left">Hi!</h2>
           </Bounce>
           <Fade>
-            <h1 className="text-left pl-5">
+            <h1 className="text-left">
               I'm <span className="p-1">Juliana.</span>
             </h1>
           </Fade>
-          <p className="text-left text-muted pl-5 mt-3">
+          <p className="text-left text-muted mt-3">
             <Typical
               className="text-uppercase"
               steps={[

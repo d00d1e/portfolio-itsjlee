@@ -2,13 +2,13 @@
   "projects": [
     {
       "_id": "project1",
-      "title": "Snake",
-      "imageUrl": "snakeapp.jpg",
-      "caption": "Eat food and grow!",
-      "description": "A retro and nostalgic, monochrome Nokia bar phone inspired snake game developed with vanilla Javascript. It manipulates DOM elements and uses event handlers to detect user input and control game flow. Move (←↑→↓) to control the snake, eat food to grow longer and avoid collision. Play now!",
-      "link": "https://d00d1e.github.io/js-snake/",
-      "github": "https://github.com/d00d1e/js-snake",
-      "stack": ["JS"],
+      "title": "World of Orchids",
+      "imageUrl": "orchidlanding.jpg",
+      "caption": "Non-profit",
+      "description": "This is an information site for a fictional non-profit organization inspired by the American Orchid Society. Built with HTML, CSS and JS, it features responsive design and scroll-reveal.js.",
+      "link": "https://d00d1e.github.io/landing-page-orchids/",
+      "github": "https://github.com/d00d1e/landing-page-orchids",
+      "stack": ["HTML | CSS | JS"],
       "category": ["all", "frontend"]
     },
     {
