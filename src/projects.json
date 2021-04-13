@@ -4,7 +4,7 @@
       "_id": "project1",
       "title": "World of Orchids",
       "imageUrl": "orchidlanding.jpg",
-      "caption": "Non-profit",
+      "caption": "Landing Page",
       "description": "This is an information site for a fictional non-profit organization inspired by the American Orchid Society. Built with HTML, CSS and JS, it features responsive design and scroll-reveal.js.",
       "link": "https://d00d1e.github.io/landing-page-orchids/",
       "github": "https://github.com/d00d1e/landing-page-orchids",
@@ -15,8 +15,8 @@
       "_id": "project2",
       "title": "L'Mau",
       "imageUrl": "shoppingcart.jpg",
-      "caption": "Fashion forward feline shopping site",
-      "description": "This is a full stack e-commerce shopping site created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with Bootstrap.",
+      "caption": "Feline E-commerce",
+      "description": "This is a full stack e-commerce shopping site created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with MDN Bootstrap and hosted on Heroku.",
       "link": "https://lmau-shopping-cart.herokuapp.com/",
       "github": "https://github.com/d00d1e/react-shopping-cart",
       "stack": ["MERN | Redux"],
@@ -24,24 +24,13 @@
     },
     {
       "_id": "project3",
-      "title": "Chanel",
-      "imageUrl": "chanellanding.jpg",
-      "caption": "Landing Page",
-      "description": "This is a landing page for Chanel perfume built with HTML, CSS and Lightbox.js. It features responsive design and a css grid image gallery.",
-      "link": "https://d00d1e.github.io/landing-page-chanel/",
-      "github": "https://github.com/d00d1e/landing-page-chanel",
-      "stack": ["HTML | CSS | Lightbox"],
-      "category": ["all", "frontend"]
-    },
-    {
-      "_id": "project4",
-      "title": "Omakase",
-      "imageUrl": "sushihomepage.jpg",
-      "caption": "Restaurant Homepage",
-      "description": "Inspired by my love for anything sushi, this project is a fully responsive website created with HTML and styled with Material Design for Bootstrap and custom css.",
-      "link": "https://d00d1e.github.io/homepage-sushi/",
-      "github": "https://github.com/d00d1e/homepage-sushi",
-      "stack": ["HTML/CSS"],
+      "title": "Lights Out",
+      "imageUrl": "lightsout.jpg",
+      "caption": "Puzzle Game",
+      "description": "This is a Lights Out inspired clone, a puzzle game consisting of a 5 by 5 grid of lights. Clicking the lights toggles itself and its adjacent lights. The goal of the game is to switch all of the lights off. Can you solve it? Created with React, neon flux css animation from a codepen by Thomas Trinca.",
+      "link": "https://d00d1e.github.io/react-lightsout/",
+      "github": "https://github.com/d00d1e/react-lightsout",
+      "stack": ["React"],
       "category": ["all", "frontend"]
     },
     {
@@ -56,14 +45,25 @@
       "category": ["all", "backend"]
     },
     {
-      "_id": "project6",
-      "title": "Pokédex",
-      "imageUrl": "pokedexapp.jpg",
-      "caption": "Gen 1. Pokémon Database",
-      "description": "Recreating a fond childhood memory, I built this app with React and data from the PokéAPI. Click on a Pokémon card to see a detailed page with data, sprites, evolutions, moves and more! Gotta Catch 'Em All!",
-      "link": "https://d00d1e.github.io/react-pokedex/",
-      "github": "https://github.com/d00d1e/react-pokedex",
-      "stack": ["React"],
+      "_id": "project10",
+      "title": "D'Accord",
+      "imageUrl": "daccordapp.jpg",
+      "caption": "Chat Application",
+      "description": "A Discord inspired app, D'Accord is a chat application created with Express, Node and Socket.io. It features real-time, bidirectional and event-based communication between the browser and the server with chatroom options. Happy Chatting!",
+      "link": "https://daccord-chat.herokuapp.com/",
+      "github": "https://github.com/d00d1e/daccord-chat-app",
+      "stack": ["HTML | CSS | JS"],
+      "category": ["all", "frontend"]
+    },
+    {
+      "_id": "project9",
+      "title": "Moose Y. Lee",
+      "imageUrl": "mooseportfolio.jpg",
+      "caption": "Portfolio",
+      "description": "I've created at least 7 versions of my portfolio website was never quite satisfied with the results. So I created yet another one but this time I made it for my cat, who is also a budding web developer. It is a fully responsive website built with HTML, CSS and JS.",
+      "link": "https://d00d1e.github.io/moose-portfolio/",
+      "github": "https://github.com/d00d1e/moose-portfolio",
+      "stack": ["HTML | CSS | JS"],
       "category": ["all", "frontend"]
     },
     {
@@ -71,7 +71,7 @@
       "title": "Folia",
       "imageUrl": "folia.jpg",
       "caption": "Online PLant Shop",
-      "description": "I'm not allowed to buy anymore houseplants so I created this MERN e-commerce site as my plant fix (for now). It features login authentication, user/order/product management and also payment methods with PayPal.",
+      "description": "As a plant enthusiast and a love for all things green, I created this full stack MERN e-commerce site to satiate my plant addiction (temporarily). It features login authentication, user/order/product management and also payment methods with PayPal. You can now buy ALL the plants because one can never have enough. Leaf and let live.",
       "link": "https://folia-app.herokuapp.com/",
       "github": "https://github.com/d00d1e/folia",
       "stack": ["MERN"],
@@ -81,7 +81,7 @@
       "_id": "project8",
       "title": "Meetup",
       "imageUrl": "meetupapp.jpg",
-      "caption": "Find events in your city!",
+      "caption": "PWA",
       "description": "This serverless, progressive web app is built with React, implementing test driven development. I use AWS Lambda as the serverless compute service as well as the MeetupAPI to fetch upcoming events for a selected city.",
       "link": "https://d00d1e.github.io/meetupApp/",
       "github": "https://github.com/d00d1e/meetupApp",
@@ -89,15 +89,16 @@
       "category": ["all", "frontend"]
     },
     {
-      "_id": "project9",
-      "title": "Moose Y. Lee",
-      "imageUrl": "mooseportfolio.jpg",
-      "caption": "Portfolio",
-      "description": "I've created at least 7 versions of my portfolio website was never quite satisfied with the results. So I created yet another one but this time I made it for a 'friend'. It is a fully responsive website with HTML, CSS and JS",
-      "link": "https://d00d1e.github.io/moose-portfolio/",
-      "github": "https://github.com/d00d1e/moose-portfolio",
-      "stack": ["HTML | CSS | JS"],
+      "_id": "project6",
+      "title": "eatMe Recipes",
+      "imageUrl": "eatmeapp.jpg",
+      "caption": "Recipe Search App",
+      "description": "I love to cook AND I love to eat. This recipe app makes it easy to find recipes for creating the perfect meals. Built with vanilla javascript, I use the Edamam API to fetch recipe data via axios. Hungry? Let's cook!",
+      "link": "https://d00d1e.github.io/eatme-app/",
+      "github": "https://github.com/d00d1e/eatme-app",
+      "stack": ["React | Edamam API"],
       "category": ["all", "frontend"]
     }
+
   ]
 }

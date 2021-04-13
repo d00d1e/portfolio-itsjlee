@@ -22,10 +22,7 @@ export default function NavigationBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div
-            className="collapse navbar-collapse text-center pl-5"
-            id="navbarNav"
-          >
+          <div className="navbar-collapse text-center pl-5" id="navbarNav">
             <ul
               className="navbar-nav ml-auto"
               data-toggle="collapse"

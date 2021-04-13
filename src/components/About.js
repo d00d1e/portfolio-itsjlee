@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import { Fade } from "react-reveal";
 import ReactCardFlip from "react-card-flip";
 import Typical from "react-typical";
 
 import headshot1 from "../assets/img/headshot1.png";
 import headshot2 from "../assets/img/headshot2.png";
-import resume from "../assets/resume/resume-webdev-JLee.pdf";
 
 export default class About extends Component {
   constructor() {
@@ -46,8 +46,7 @@ export default class About extends Component {
               </ReactCardFlip>
             </Fade>
           </div>
-
-          <div className="col-xl-5 my-auto">
+          <div className=" col-xl-5 my-auto">
             <div className="about-text mb-5 mt-5">
               <h1 className="mb-5">
                 <Typical
@@ -58,19 +57,23 @@ export default class About extends Component {
                 />
               </h1>
               <Fade>
-                <p className="text-center h4 mt-3 m-2 mb-3">
-                  {" "}
+                <p className="text-center m-2">
                   I am a front end web developer based in the SF Bay Area. I
-                  have a passion for building and optimizing interactive,
-                  user-friendly, feature-rich websites and web applications. ☺︎{" "}
+                  like to work with JavaScript, React and NodeJS and have also
+                  dabbled in backend development. I have a passion for building
+                  and optimizing interactive, user-friendly, feature-rich
+                  websites and web applications.
+                </p>
+                <h1 className="text-center m-2">☺︎</h1>
+                <p className="text-center m-2 mb-3">
+                  When I'm not coding, I enjoy playing the kalimba, tending my
+                  urban garden and hiking with my cat Moose.
                 </p>
               </Fade>
             </div>
             <Fade bottom>
               <div className="text-center text-uppercase mt-5 mb-5">
-                <a href={resume} target="_blank" rel="noopener noreferrer">
-                  <i className="fas fa-cloud-download-alt"></i> &nbsp; Resume
-                </a>
+                <NavLink to="/projects">View My Work</NavLink>
               </div>
             </Fade>
           </div>

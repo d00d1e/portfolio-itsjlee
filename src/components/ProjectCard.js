@@ -38,7 +38,7 @@ export default class ProjectCard extends Component {
           <ul className="row p-5">
             {projects.map((project) => {
               return (
-                <div className="col-md-6 col-lg-6 col-xl-4" key={project._id}>
+                <div className="col-lg-6 col-xl-4" key={project._id}>
                   <li className="card-list">
                     <div className="card">
                       <a
@@ -128,7 +128,7 @@ export default class ProjectCard extends Component {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          /View Code
+                          View Code
                         </a>
                       </p>
                       <p className="text-center">
@@ -138,7 +138,7 @@ export default class ProjectCard extends Component {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          /View Full Page
+                          View Full Page
                         </a>
                       </p>
                     </div>

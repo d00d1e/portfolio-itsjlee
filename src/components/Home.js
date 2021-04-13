@@ -1,10 +1,33 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { Fade, Bounce } from "react-reveal";
 import Typical from "react-typical";
 
 export default function Home() {
   return (
-    <div className="bg">
+    <div className="container-fluid">
+      <div className="bubbles">
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+        <div className="bubble"></div>
+      </div>
       <section id="home">
         <div className="home-content container my-auto">
           <Bounce left>
@@ -32,6 +55,9 @@ export default function Home() {
               wrapper="b"
             />
           </p>
+          <Fade bottom>
+            <NavLink to="/about">What I do</NavLink>
+          </Fade>
         </div>
       </section>
     </div>
