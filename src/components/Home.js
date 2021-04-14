@@ -56,7 +56,9 @@ export default function Home() {
             />
           </p>
           <Fade bottom>
-            <NavLink to="/about">What I do</NavLink>
+            <div className="mt-5">
+              <NavLink to="/about">What I do</NavLink>
+            </div>
           </Fade>
         </div>
       </section>

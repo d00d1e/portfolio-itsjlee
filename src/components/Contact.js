@@ -86,7 +86,7 @@ export default function Contact() {
           </Fade>
           <Fade bottom>
             <button className="text-uppercase mt-5" type="submit">
-              Send{" "}
+              Send
             </button>
           </Fade>
         </form>

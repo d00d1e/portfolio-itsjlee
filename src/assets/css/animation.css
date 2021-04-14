@@ -18,7 +18,7 @@
   border-radius: 50%;
   opacity: 0.4;
   border: 1px solid #fff;
-  animation: floatUp 10s infinite;
+  animation: floatUp 10s infinite ease-in;
 }
 
 .bubble:nth-child(1) {
@@ -46,10 +46,10 @@
 }
 
 .bubble:nth-child(4) {
-  width: 5.5;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   left: 15%;
-  background-color: var(--onyx);
+  background-color: var(--light-blue);
   animation-duration: 9.8s;
 }
 
@@ -97,7 +97,7 @@
   width: 3.5rem;
   height: 3.5rem;
   left: 45%;
-  background-color: var(--onyx);
+  background-color: var(--light-blue);
   animation-duration: 6.5s;
 }
 
@@ -137,7 +137,7 @@
   width: 2.9rem;
   height: 2.9rem;
   left: 75%;
-  background-color: var(--gold);
+  background-color: var(--light-blue);
   animation-duration: 9.5s;
 }
 
@@ -187,8 +187,8 @@
 .about-img::before {
   position: absolute;
   content: "";
-  height: 34rem;
-  width: 34rem;
+  height: 33rem;
+  width: 33rem;
   background: linear-gradient(to left, var(--soft-gold), var(--rose-gold));
   opacity: 0.5;
   animation: blob 10s infinite linear;

@@ -7,6 +7,7 @@
 }
 
 :root {
+  --light-blue: #d6e6f9;
   --rose-gold: #bd8c7d;
   --soft-gold: #d1bfa7;
   --gold: #d4af37;
@@ -20,7 +21,9 @@
 /*********
   GLOBAL
 **********/
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -181,14 +184,40 @@ section {
   transition: all 1s ease;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.28);
   transition: all 1s ease;
+  position: relative;
+}
+
+#home a::before,
+#home a::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-color: var(--onyx);
+  border-style: solid;
+  transition: all 1s ease;
+}
+
+#home a::before {
+  top: -0.6rem;
+  left: -0.6rem;
+  border-width: 1px 0 0 1px;
+}
+
+#home a::after {
+  bottom: -0.6rem;
+  right: -0.6rem;
+  border-width: 0 1px 1px 0;
+}
+
+#home a:hover::before,
+#home a:hover::after {
+  width: calc(100% + 1.2rem);
+  height: calc(100% + 1.2rem);
 }
 
 #home a:hover {
   background-color: var(--white);
-}
-
-#home a:active {
-  transform: translateY(3rem);
 }
 
 /********
@@ -229,6 +258,36 @@ section {
   border: 1px solid var(--onyx);
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.28);
   transition: all 1s ease;
+  position: relative;
+}
+
+#about a::before,
+#about a::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-color: var(--onyx);
+  border-style: solid;
+  transition: all 1s ease;
+}
+
+#about a::before {
+  top: -0.6rem;
+  left: -0.6rem;
+  border-width: 1px 0 0 1px;
+}
+
+#about a::after {
+  bottom: -0.6rem;
+  right: -0.6rem;
+  border-width: 0 1px 1px 0;
+}
+
+#about a:hover::before,
+#about a:hover::after {
+  width: calc(100% + 1.2rem);
+  height: calc(100% + 1.2rem);
 }
 
 #about a:hover {
@@ -344,8 +403,9 @@ section {
 
 .contact-form button {
   display: block;
+  position: relative;
   margin: 0 auto;
-  padding: 0.5rem 5rem;
+  padding: 0.6rem 5rem;
   border-radius: 0.2rem;
   border: 1px solid var(--onyx);
   color: var(--onyx);
@@ -353,6 +413,35 @@ section {
   background-color: #8e8e9080;
   transition: all 1s ease;
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.28);
+}
+
+.contact-form button::before,
+.contact-form button::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-color: var(--onyx);
+  border-style: solid;
+  transition: all 1s ease;
+}
+
+.contact-form button::before {
+  top: -0.6rem;
+  left: -0.6rem;
+  border-width: 1px 0 0 1px;
+}
+
+.contact-form button::after {
+  bottom: -0.6rem;
+  right: -0.6rem;
+  border-width: 0 1px 1px 0;
+}
+
+.contact-form button:hover::before,
+.contact-form button:hover::after {
+  width: calc(100% + 1.2rem);
+  height: calc(100% + 1.2rem);
 }
 
 .contact-form button:hover {
@@ -387,7 +476,7 @@ section {
 }
 
 .social-media a:hover:nth-child(1) {
-  color: var(--silver);
+  color: var(--soft-gold);
 }
 
 .social-media a:hover:nth-child(2) {
@@ -395,7 +484,8 @@ section {
 }
 
 .social-media a:hover:nth-child(3) {
-  color: var(--soft-gold);
+  color: var(--light-blue);
+  opacity: 0.9;
 }
 
 .social-media a:hover:nth-child(4) {
