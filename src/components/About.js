@@ -60,9 +60,8 @@ export default class About extends Component {
                 <p className="text-center m-2">
                   I am a front end web developer based in the SF Bay Area. I
                   like to work with JavaScript, React and NodeJS and have also
-                  dabbled in backend development. I have a passion for building
-                  and optimizing interactive, user-friendly, feature-rich
-                  websites and web applications.
+                  dabbled in backend development. I build/optimize interactive,
+                  user-friendly, feature-rich websites & web applications.
                 </p>
                 <h1 className="text-center m-2">☺︎</h1>
                 <p className="text-center m-2 mb-3">
