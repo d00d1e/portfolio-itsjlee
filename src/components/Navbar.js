@@ -9,7 +9,7 @@ export default function NavigationBar() {
       <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase mx-auto py-4">
         <div className="container-fluid">
           <NavLink className="navbar-brand pl-5" to="/">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" /> <span>Juliana Y. Lee</span>
           </NavLink>
           <button
             className="navbar-toggler"
@@ -22,7 +22,10 @@ export default function NavigationBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="navbar-collapse text-center pl-5" id="navbarNav">
+          <div
+            className="collapse navbar-collapse text-center pl-5"
+            id="navbarNav"
+          >
             <ul
               className="navbar-nav ml-auto"
               data-toggle="collapse"

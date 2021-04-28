@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
-import './index.css';
+import "./index.css";
+import "./assets/css/animation.css";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   ReactDOM.render(
@@ -12,9 +13,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
         <App />
       </React.Fragment>
     </BrowserRouter>,
-    document.getElementById('root')
+    document.getElementById("root")
   );
 });
-
-
-

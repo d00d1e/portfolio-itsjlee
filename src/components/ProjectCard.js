@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Fade, Zoom } from "react-reveal";
 import Modal from "react-modal";
+import Typical from "react-typical";
 
 export default class ProjectCard extends Component {
   constructor(props) {
@@ -34,8 +35,16 @@ export default class ProjectCard extends Component {
 
     return (
       <>
+        <h1 className="outline pt-2 pl-2">
+          <Typical
+            className="mb-0 p-0"
+            steps={["Recent work", 3000]}
+            loop={1}
+            wrapper="p"
+          />
+        </h1>
         <Zoom cascade>
-          <ul className="row p-5">
+          <ul className="row p-2">
             {projects.map((project) => {
               return (
                 <div className="col-lg-6 col-xl-4" key={project._id}>

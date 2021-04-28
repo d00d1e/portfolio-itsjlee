@@ -16,8 +16,7 @@
 .bubble {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.4;
-  border: 1px solid #fff;
+  opacity: 0.5;
   animation: floatUp 10s infinite ease-in;
 }
 
@@ -184,7 +183,7 @@
 /*********
   BLOB
 **********/
-.about-img::before {
+/* .about-img::before {
   position: absolute;
   content: "";
   height: 33rem;
@@ -192,7 +191,7 @@
   background: linear-gradient(to left, var(--soft-gold), var(--rose-gold));
   opacity: 0.5;
   animation: blob 10s infinite linear;
-}
+} */
 
 /*************
   KEYFRAMES

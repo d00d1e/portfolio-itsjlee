@@ -14,7 +14,7 @@ export default function Layout(props) {
         <div id="content">{props.children}</div>
       ) : (
         <div id="preloader">
-          <h1 className="text-center my-auto">
+          <h1 className="outline text-center my-auto">
             <Typical
               className="text-center px-3"
               steps={["Who is JLee?", 3000]}

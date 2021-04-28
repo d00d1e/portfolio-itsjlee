@@ -24,7 +24,7 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <div className="row my-auto m-4 mt-5 pt-4">
+        <div className="about-container row my-auto m-4 mt-5 pt-4">
           <div className="about-img col-xl-6 d-flex justify-content-center align-items-center">
             <Fade>
               <ReactCardFlip
@@ -46,27 +46,28 @@ export default class About extends Component {
               </ReactCardFlip>
             </Fade>
           </div>
-          <div className=" col-xl-5 my-auto">
-            <div className="about-text mb-5 mt-5">
-              <h1 className="mb-5">
+          <div className="col-xl-5 my-auto">
+            <div className="about-text mb-3 mt-5">
+              <h1 className="outline mb-5">
                 <Typical
-                  className="text-center mb-5"
-                  steps={["Nice to meet you.", 3000]}
+                  className="mb-5"
+                  steps={["About me", 3000]}
                   loop={1}
                   wrapper="p"
                 />
               </h1>
               <Fade>
-                <p className="text-center m-2">
+                <p className="text-center m-2 mb-3">
                   I am a front end web developer based in the SF Bay Area. I
-                  like to work with JavaScript, React and NodeJS and have also
-                  dabbled in backend development. I build/optimize interactive,
-                  user-friendly, feature-rich websites & web applications.
+                  like working with JavaScript, React and NodeJS and find
+                  backend development particularly fun. I build/optimize
+                  interactive, user-friendly, feature-rich websites & web
+                  applications.
                 </p>
-                <h1 className="text-center m-2">☺︎</h1>
+                <h1 className="text-center m-1">☺︎</h1>
                 <p className="text-center m-2 mb-3">
                   When I'm not coding, I enjoy playing the kalimba, tending my
-                  urban garden and hiking with my cat Moose.
+                  urban garden and traveling with my cat, Moose.
                 </p>
               </Fade>
             </div>

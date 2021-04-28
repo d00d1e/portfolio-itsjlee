@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./assets/css/animation.css";
 
-// import Layout from './components/Layout';
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
