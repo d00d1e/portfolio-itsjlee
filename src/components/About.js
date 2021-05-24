@@ -61,22 +61,33 @@ export default class About extends Component {
             </h1>
             <div className="about-text m4 p-4 pt-4 pb-4">
               <Fade>
-                <p className="text-center mb-3">
-                  I am a self-taught <u>Web Developer</u> based in the SF Bay
-                  Area. I build/optimize interactive, user-friendly,
-                  feature-rich websites &#38; web applications.
+                <p className="text-center mt-3 mb-3">
+                  I am a self-taught <u>Frontend Web Developer</u> from Boston,
+                  based in the the SF Bay Area. I build/optimize interactive,
+                  user-friendly, feature-rich websites &#38; web applications.
+                </p>
+                <p className="text-center mt-3 mb-3">
+                  I have a background in pharmaceuticals and spent 10 years
+                  working with patients in various outpatient pharmacies, Albeit
+                  gratifying and enjoyable, I was in a new phase of my life with
+                  new aspirations and wanted challenges that would push me out
+                  of my comfort zone. Web development has given me the power to
+                  be creative while building with code, tests my analytical and
+                  problem-solving skills, and most importantly, writing code is
+                  such a satisfying activity and makes me extremely happy.
                 </p>
                 <p className="text-center mb-2">
                   I have 2+ years of experience working with JavaScript, JS
                   frameworks (React, Angular, Vue) and backend technologies such
-                  as node/express, mongoDB and graphQL. I also like to explore
-                  and learn new technologies to challenge myself to become a
+                  as node/express, mongoDB and graphQL. I love to learn and
+                  explore new technologies to challenge myself to become a
                   better developer.
                 </p>
                 <h1 className="text-center">☺︎</h1>
-                <p className="text-center">
+                <p className="text-center mt-2 mb-3">
                   When I'm not coding, I enjoy making music with my kalimba,
-                  tending my urban garden and traveling with my cat, Moose.
+                  playing League, tending my urban jungle and traveling with my
+                  cat, Moose.
                 </p>
               </Fade>
             </div>
