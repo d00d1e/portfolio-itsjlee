@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import SocialBar from "./components/SocialBar";
 import Footer from "./components/Footer";
+import Page404 from "./components/Page404";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
+          <Route component={Page404} />
         </Switch>
       </BrowserRouter>
       <SocialBar />

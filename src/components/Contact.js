@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Fade from "react-reveal";
 import Typical from "react-typical";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
-  function sendEmail(e) {
+  const [message, setMessage] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -12,7 +15,9 @@ export default function Contact() {
         "gmail",
         "template_portfolio",
         e.target,
-        "user_koS8SBOLvsk4cPYVwf4Yp"
+        "user_koS8SBOLvsk4cPYVwf4Yp",
+        setMessage("Your email has been sent!"),
+        setShowMessage(true)
       )
       .then(
         (result) => {
@@ -24,18 +29,27 @@ export default function Contact() {
       );
 
     e.target.reset();
-  }
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 2000);
+  }, [showMessage]);
 
   return (
     <section id="contact">
-      <div className="container-fluid my-auto">
+      <div className="container-fluid contact-container my-auto">
         <h1 className="outline mb-5">
           <Typical
-            className="text-center mb-5"
+            className="text-center"
             steps={["Let's connect! ☺︎", 3000]}
             loop={1}
           />
         </h1>
+        {showMessage && (
+          <p className="sent-message text-center fixed">{message}</p>
+        )}
         <form className="row contact-form mx-auto my-auto" onSubmit={sendEmail}>
           <Fade>
             <div className="col-md-12">

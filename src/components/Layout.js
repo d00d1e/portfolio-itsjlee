@@ -5,19 +5,20 @@ export default function Layout(props) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    const preloaderTimer = setTimeout(() => setLoading(false), 3000);
+    return () => clearTimeout(preloaderTimer);
   }, []);
 
   return (
     <div className="container-fluid">
-      {loading === false ? (
+      {!loading ? (
         <div id="content">{props.children}</div>
       ) : (
         <div id="preloader">
           <h1 className="outline text-center my-auto">
             <Typical
               className="text-center px-3"
-              steps={["Who is JLee?", 3000]}
+              steps={["Hello.", 3000]}
               loop={1}
             />
           </h1>

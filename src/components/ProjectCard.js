@@ -34,20 +34,20 @@ export default class ProjectCard extends Component {
     const { projects } = this.props;
 
     return (
-      <>
+      <section id="projects">
         <h1 className="outline pt-2 pl-2">
           <Typical
             className="mb-0 p-0"
-            steps={["Recent work", 3000]}
+            steps={["Recent work", 4000]}
             loop={1}
             wrapper="p"
           />
         </h1>
         <Zoom cascade>
-          <ul className="row p-2">
+          <ul className="row p-3">
             {projects.map((project) => {
               return (
-                <div className="col-lg-6 col-xl-4" key={project._id}>
+                <div className="col-md-6 col-lg-6 col-xl-4" key={project._id}>
                   <li className="card-list">
                     <div className="card">
                       <a
@@ -55,6 +55,8 @@ export default class ProjectCard extends Component {
                         onClick={() => this.openModal(project)}
                       >
                         <img
+                          rel="preload"
+                          as="image"
                           src={
                             require("../assets/img/projects/" +
                               project.imageUrl).default
@@ -75,7 +77,7 @@ export default class ProjectCard extends Component {
               );
             })}
 
-            <Zoom>
+            <Zoom top>
               <Modal
                 isOpen={this.state.isOpen}
                 onRequestClose={this.closeModal}
@@ -86,15 +88,14 @@ export default class ProjectCard extends Component {
                     backgroundColor: "rgba(0, 0, 0, 0.25)",
                   },
                   content: {
-                    position: "absolute",
                     top: "50%",
                     left: "50%",
-                    right: "35%",
+                    right: "32.5%",
                     bottom: "auto",
                     marginRight: "-50%",
                     transform: "translate(-50%, -50%)",
-                    minheight: "100%",
-                    overflow: "auto",
+                    maxheight: "100%",
+                    padding: ".4rem 1rem",
                   },
                 }}
               >
@@ -118,7 +119,7 @@ export default class ProjectCard extends Component {
                     </div>
                   </Fade>
                   <div className="project-details-description">
-                    <h4 className="text-center mt-5 text-uppercase">
+                    <h4 className="text-center mt-4 text-uppercase">
                       {this.state.activeProject.title}
                     </h4>
                     <h6 className="text-center text-muted">
@@ -129,7 +130,7 @@ export default class ProjectCard extends Component {
                       {this.state.activeProject.description}
                     </p>
                     <div className="d-flex justify-content-around">
-                      <p>Stack: {this.state.activeProject.stack} </p>
+                      <p>{this.state.activeProject.stack} </p>
                       <p className="text-center">
                         <a
                           className="text-uppercase"
@@ -157,7 +158,7 @@ export default class ProjectCard extends Component {
             </Zoom>
           </ul>
         </Zoom>
-      </>
+      </section>
     );
   }
 }

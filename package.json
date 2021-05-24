@@ -13,11 +13,10 @@
     "react": "^16.14.0",
     "react-card-flip": "^1.0.11",
     "react-dom": "^16.14.0",
-    "react-iframe": "^1.8.0",
     "react-modal": "^3.11.2",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.1",
+    "react-scripts": "^4.0.3",
     "react-typical": "^0.1.3"
   },
   "scripts": {
@@ -43,6 +42,6 @@
   },
   "description": "Juliana Y Lee | Web Developer",
   "main": "index.js",
-  "author": "",
+  "author": "jLee",
   "license": "ISC"
 }

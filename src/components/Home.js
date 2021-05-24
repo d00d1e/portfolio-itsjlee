@@ -30,8 +30,8 @@ export default function Home() {
       </div>
       <section id="home">
         <div className="home-content container my-auto">
-          <Bounce left>
-            <h2 className="text-left">Hi!</h2>
+          <Bounce top>
+            <h2 className="smiley text-left">☻</h2>
           </Bounce>
           <Fade>
             <h1 className="text-left">

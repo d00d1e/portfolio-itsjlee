@@ -24,20 +24,24 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <div className="about-container row my-auto m-4 mt-5 pt-4">
-          <div className="about-img col-xl-6 d-flex justify-content-center align-items-center">
+        <div className="about-container row my-auto m-4 pt-4">
+          <div className="about-img col-xl-6 d-flex flex-column justify-content-center align-items-center">
             <Fade>
               <ReactCardFlip
                 isFlipped={this.state.isFlipped}
                 flipDirection="horizontal"
               >
                 <img
+                  rel="preload"
+                  as="image"
                   src={headshot1}
                   alt="JLee Headshot"
                   fluid="true"
                   onClick={this.handleClick}
                 />
                 <img
+                  rel="preload"
+                  as="image"
                   src={headshot2}
                   alt="JLee Headshot"
                   fluid="true"
@@ -46,28 +50,33 @@ export default class About extends Component {
               </ReactCardFlip>
             </Fade>
           </div>
-          <div className="col-xl-5 my-auto">
-            <div className="about-text mb-3 mt-5">
-              <h1 className="outline mb-5">
-                <Typical
-                  className="mb-5"
-                  steps={["About me", 3000]}
-                  loop={1}
-                  wrapper="p"
-                />
-              </h1>
+          <div className="about-text-container col-xl-6 d-flex flex-column justify-content-center align-items-center">
+            <h1 className="outline m-1">
+              <Typical
+                className="justify-content-center mt-5"
+                steps={["About me", 4000]}
+                loop={1}
+                wrapper="p"
+              />
+            </h1>
+            <div className="about-text m4 p-4 pt-4 pb-4">
               <Fade>
-                <p className="text-center m-2 mb-3">
-                  I am a front end web developer based in the SF Bay Area. I
-                  like working with JavaScript, React and NodeJS and find
-                  backend development particularly fun. I build/optimize
-                  interactive, user-friendly, feature-rich websites & web
-                  applications.
+                <p className="text-center mb-3">
+                  I am a self-taught <u>Web Developer</u> based in the SF Bay
+                  Area. I build/optimize interactive, user-friendly,
+                  feature-rich websites &#38; web applications.
                 </p>
-                <h1 className="text-center m-1">☺︎</h1>
-                <p className="text-center m-2 mb-3">
-                  When I'm not coding, I enjoy playing the kalimba, tending my
-                  urban garden and traveling with my cat, Moose.
+                <p className="text-center mb-2">
+                  I have 2+ years of experience working with JavaScript, JS
+                  frameworks (React, Angular, Vue) and backend technologies such
+                  as node/express, mongoDB and graphQL. I also like to explore
+                  and learn new technologies to challenge myself to become a
+                  better developer.
+                </p>
+                <h1 className="text-center">☺︎</h1>
+                <p className="text-center">
+                  When I'm not coding, I enjoy making music with my kalimba,
+                  tending my urban garden and traveling with my cat, Moose.
                 </p>
               </Fade>
             </div>
