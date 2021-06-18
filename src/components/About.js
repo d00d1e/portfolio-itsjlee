@@ -24,8 +24,16 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <div className="about-container row my-auto m-4 pt-4">
-          <div className="about-img col-xl-6 d-flex flex-column justify-content-center align-items-center">
+        <h1 className="outline text-center pt-4">
+          <Typical
+            className="justify-content-center mt-5"
+            steps={["About", 4000]}
+            loop={1}
+            wrapper="p"
+          />
+        </h1>
+        <div className="about-container row my-auto">
+          <div className="about-img col-xl-6 d-flex flex-column align-items-center pt-5">
             <Fade>
               <ReactCardFlip
                 isFlipped={this.state.isFlipped}
@@ -49,32 +57,29 @@ export default class About extends Component {
                 />
               </ReactCardFlip>
             </Fade>
+            <Fade bottom>
+              <div className="text-center text-uppercase pt-5 pb-5">
+                <NavLink to="/projects">View My Work</NavLink>
+              </div>
+            </Fade>
           </div>
           <div className="about-text-container col-xl-6 d-flex flex-column justify-content-center align-items-center">
-            <h1 className="outline m-1">
-              <Typical
-                className="justify-content-center mt-5"
-                steps={["About me", 4000]}
-                loop={1}
-                wrapper="p"
-              />
-            </h1>
             <div className="about-text m4 p-4 pt-4 pb-4">
               <Fade>
                 <p className="text-center mt-3 mb-3">
-                  I am a self-taught <u>Frontend Web Developer</u> from Boston,
-                  based in the the SF Bay Area. I build/optimize interactive,
-                  user-friendly, feature-rich websites &#38; web applications.
+                  I am a self-taught <u>Junior Full Stack Developer</u> from
+                  Boston, based in the the SF Bay Area. I build scalable,
+                  efficent and user-friendly web applications.
                 </p>
                 <p className="text-center mt-3 mb-3">
                   I have a background in pharmaceuticals and spent 10 years
-                  working with patients in various outpatient pharmacies, Albeit
+                  working with patients in various outpatient pharmacies. Albeit
                   gratifying and enjoyable, I was in a new phase of my life with
                   new aspirations and wanted challenges that would push me out
                   of my comfort zone. Web development has given me the power to
                   be creative while building with code, tests my analytical and
-                  problem-solving skills, and most importantly, writing code is
-                  such a satisfying activity and makes me extremely happy.
+                  problem-solving skills and most importantly, allows me to
+                  contribute to the tech community.
                 </p>
                 <p className="text-center mb-2">
                   I have 2+ years of experience working with JavaScript, JS
@@ -91,11 +96,6 @@ export default class About extends Component {
                 </p>
               </Fade>
             </div>
-            <Fade bottom>
-              <div className="text-center text-uppercase mt-5 mb-5">
-                <NavLink to="/projects">View My Work</NavLink>
-              </div>
-            </Fade>
           </div>
         </div>
       </section>

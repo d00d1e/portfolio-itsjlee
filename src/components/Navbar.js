@@ -6,10 +6,10 @@ import logo from "../assets/img/brand-logo64.svg";
 export default function NavigationBar() {
   return (
     <Fade top>
-      <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase mx-auto py-4">
-        <div className="container-fluid">
+      <nav className="navbar navbar-nav navbar-expand-md navbar-light text-uppercase w-75 mx-auto py-3">
+        <div className="container-fluid w-75">
           <NavLink className="navbar-brand pl-5" to="/">
-            <img src={logo} alt="logo" /> <span>Juliana Y. Lee</span>
+            <img src={logo} alt="logo" />
           </NavLink>
           <button
             className="navbar-toggler"

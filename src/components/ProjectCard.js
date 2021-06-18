@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Fade, Zoom } from "react-reveal";
+import { Link } from "react-router-dom";
+import { Zoom } from "react-reveal";
 import Modal from "react-modal";
 import Typical from "react-typical";
 
@@ -34,11 +35,11 @@ export default class ProjectCard extends Component {
     const { projects } = this.props;
 
     return (
-      <section id="projects">
-        <h1 className="outline pt-2 pl-2">
+      <section id="project-list">
+        <h1 className="text-center outline pt-5 pb-5">
           <Typical
-            className="mb-0 p-0"
-            steps={["Recent work", 4000]}
+            className="mb-0"
+            steps={["Portfolio", 4000]}
             loop={1}
             wrapper="p"
           />
@@ -50,9 +51,10 @@ export default class ProjectCard extends Component {
                 <div className="col-md-6 col-lg-6 col-xl-4" key={project._id}>
                   <li className="card-list">
                     <div className="card">
-                      <a
-                        href={"#" + project._id}
-                        onClick={() => this.openModal(project)}
+                      <Link
+                        to={`/projects/${project._id}`}
+                        // href={"#" + project._id}
+                        // onClick={() => this.openModal(project)}
                       >
                         <img
                           rel="preload"
@@ -64,7 +66,7 @@ export default class ProjectCard extends Component {
                           alt={project.title}
                           className="card-img-top"
                         />
-                      </a>
+                      </Link>
                       <div className="card-body m-0 pt-2">
                         <h5 className="card-title text-uppercase m-0">
                           {project.title}
@@ -77,7 +79,7 @@ export default class ProjectCard extends Component {
               );
             })}
 
-            <Zoom top>
+            {/* <Zoom top>
               <Modal
                 isOpen={this.state.isOpen}
                 onRequestClose={this.closeModal}
@@ -148,14 +150,14 @@ export default class ProjectCard extends Component {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          View Full Page
+                          Demo
                         </a>
                       </p>
                     </div>
                   </div>
                 </div>
               </Modal>
-            </Zoom>
+            </Zoom> */}
           </ul>
         </Zoom>
       </section>

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 // import CategoryNav from "./CategoryNav";
 import data from "../projects";
 
-export default class Projects extends Component {
+export default class ProjectList extends Component {
   constructor() {
     super();
     this.state = {
@@ -13,10 +13,10 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <section id="projects">
+      <section id="project-list">
         {/* <CategoryNav /> */}
         <div className="container-fluid">
-          <div className="row">
+          <div className="row pt-4">
             <ProjectCard projects={this.state.projects} />
           </div>
         </div>

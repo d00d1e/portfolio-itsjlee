@@ -41,11 +41,7 @@ export default function Contact() {
     <section id="contact">
       <div className="container-fluid contact-container my-auto">
         <h1 className="outline mb-5">
-          <Typical
-            className="text-center"
-            steps={["Let's connect! ☺︎", 3000]}
-            loop={1}
-          />
+          <Typical className="text-center" steps={["Contact", 3000]} loop={1} />
         </h1>
         {showMessage && (
           <p className="sent-message text-center fixed">{message}</p>
@@ -57,19 +53,9 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Name"
-                  required
-                />
-              </div>
-            </div>
-            <div className="col-md-12 ">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  name="company"
-                  className="form-control boxshadow"
-                  placeholder="Subject"
+                  autoComplete="off"
                   required
                 />
               </div>
@@ -79,8 +65,9 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Email"
+                  autoComplete="off"
                   required
                 />
               </div>
@@ -88,10 +75,10 @@ export default function Contact() {
             <div className="col-md-12">
               <div className="mb-3">
                 <textarea
-                  rows="4"
+                  rows="5"
                   cols="30"
                   name="message"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Message"
                   required
                 ></textarea>

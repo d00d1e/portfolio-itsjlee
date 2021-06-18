@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "_id": "project1",
+      "_id": "world-of-orchids",
       "title": "World of Orchids",
       "imageUrl": "orchidlanding.jpg",
       "caption": "Landing Page",
@@ -12,7 +12,7 @@
       "category": ["all", "frontend"]
     },
     {
-      "_id": "project2",
+      "_id": "lmau",
       "title": "L'Mau",
       "imageUrl": "shoppingcart.jpg",
       "caption": "E-commerce site",
@@ -23,7 +23,7 @@
       "category": ["all", "frontend", "backend"]
     },
     {
-      "_id": "project3",
+      "_id": "lights-out",
       "title": "Lights Out",
       "imageUrl": "lightsout.jpg",
       "caption": "Puzzle Game",
@@ -34,10 +34,10 @@
       "category": ["all", "frontend"]
     },
     {
-      "_id": "project5",
+      "_id": "iflix",
       "title": "iFlix",
       "imageUrl": "movieapi.jpg",
-      "caption": "Movie Web API",
+      "caption": "Movie API",
       "description": "This is a full stack movie web application using server-side REST API architecture with Node/Express, data management with mongoose and MongoDB Atlas, client-side interface with REACT, styled with React Bootstrap. {testUser: cat, password: cat} ",
       "link": "https://i-flix.herokuapp.com/client/",
       "github": "https://github.com/d00d1e/movie-api",
@@ -45,7 +45,7 @@
       "category": ["all", "backend"]
     },
     {
-      "_id": "project10",
+      "_id": "daccord",
       "title": "D'Accord",
       "imageUrl": "daccordapp.jpg",
       "caption": "Chat Application",
@@ -56,7 +56,7 @@
       "category": ["all", "frontend"]
     },
     {
-      "_id": "project7",
+      "_id": "folia",
       "title": "Folia",
       "imageUrl": "folia.jpg",
       "caption": "Online PLant Shop",
@@ -67,7 +67,7 @@
       "category": ["all", "frontend", "backend"]
     },
     {
-      "_id": "project8",
+      "_id": "meetup",
       "title": "Meetup",
       "imageUrl": "meetupapp.jpg",
       "caption": "Progressive Web App",
@@ -78,7 +78,7 @@
       "category": ["all", "frontend"]
     },
     {
-      "_id": "project6",
+      "_id": "eatme-recipes",
       "title": "eatMe Recipes",
       "imageUrl": "eatmeapp.jpg",
       "caption": "Recipe Search App",
