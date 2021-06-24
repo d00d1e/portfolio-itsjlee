@@ -1,29 +1,33 @@
 {
   "projects": [
     {
-      "_id": "project1",
+      "_id": "world-of-orchids",
       "title": "World of Orchids",
       "imageUrl": "orchidlanding.jpg",
       "caption": "Landing Page",
-      "description": "This is an information site for a fictional non-profit organization inspired by the American Orchid Society. Built with HTML, CSS and JS, it features responsive design and scroll-reveal.js.",
+      "description": "This is an information site for a fictional non-profit organization inspired by the American Orchid Society. Built with HTML, CSS and JS, it features responsive design.",
       "link": "https://d00d1e.github.io/landing-page-orchids/",
       "github": "https://github.com/d00d1e/landing-page-orchids",
       "stack": ["HTML | CSS | JS"],
-      "category": ["all", "frontend"]
+      "category": ["all", "frontend"],
+      "date": "March 2021",
+      "featured": false
     },
     {
-      "_id": "project2",
+      "_id": "lmau",
       "title": "L'Mau",
       "imageUrl": "shoppingcart.jpg",
       "caption": "E-commerce site",
       "description": "This is a full stack e-commerce shopping site created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with MDN Bootstrap and hosted on Heroku.",
       "link": "https://lmau-shopping-cart.herokuapp.com/",
       "github": "https://github.com/d00d1e/react-shopping-cart",
-      "stack": ["MERN | Redux"],
-      "category": ["all", "frontend", "backend"]
+      "stack": ["Mongoose | Express | React | Redux | Node"],
+      "category": ["all", "frontend", "backend"],
+      "date": "October 2020",
+      "featured": false
     },
     {
-      "_id": "project3",
+      "_id": "lights-out",
       "title": "Lights Out",
       "imageUrl": "lightsout.jpg",
       "caption": "Puzzle Game",
@@ -31,62 +35,74 @@
       "link": "https://d00d1e.github.io/react-lightsout/",
       "github": "https://github.com/d00d1e/react-lightsout",
       "stack": ["React"],
-      "category": ["all", "frontend"]
+      "category": ["all", "frontend"],
+      "date": "January 2021",
+      "featured": false
     },
     {
-      "_id": "project5",
+      "_id": "iflix",
       "title": "iFlix",
       "imageUrl": "movieapi.jpg",
-      "caption": "Movie Web API",
-      "description": "This is a full stack movie web application using server-side REST API architecture with Node/Express, data management with mongoose and MongoDB Atlas, client-side interface with REACT, styled with React Bootstrap. {testUser: cat, password: cat} ",
+      "caption": "Movie API",
+      "description": "This is a full stack movie web application utilizing server-side REST API architecture with Node/Express, data management with mongoose and MongoDB Atlas, client-side interface with REACT, styled with React Bootstrap. {testUser: cat, password: cat} ",
       "link": "https://i-flix.herokuapp.com/client/",
       "github": "https://github.com/d00d1e/movie-api",
-      "stack": ["MERN"],
-      "category": ["all", "backend"]
+      "stack": ["Mongoose | Express | React | Node"],
+      "category": ["all", "backend"],
+      "date": "January 2020",
+      "featured": true
     },
     {
-      "_id": "project10",
+      "_id": "daccord",
       "title": "D'Accord",
       "imageUrl": "daccordapp.jpg",
       "caption": "Chat Application",
       "description": "A Discord inspired app, D'Accord is a chat application created with Express, Node and Socket.io. It features real-time, bidirectional and event-based communication between the browser and the server with chatroom options. Happy Chatting!",
       "link": "https://daccord-chat.herokuapp.com/",
       "github": "https://github.com/d00d1e/daccord-chat-app",
-      "stack": ["HTML | CSS | JS"],
-      "category": ["all", "frontend"]
+      "stack": ["HTML | CSS | JS | Socket"],
+      "category": ["all", "frontend"],
+      "date": "April 2021",
+      "featured": false
     },
     {
-      "_id": "project7",
+      "_id": "folia",
       "title": "Folia",
       "imageUrl": "folia.jpg",
       "caption": "Online PLant Shop",
-      "description": "As a plant enthusiast and a love for all things green, I created this full stack MERN e-commerce site to satiate my plant addiction (temporarily). It features login authentication, user/order/product management and also payment methods with PayPal via Stripe. You can now buy ALL the plants because one can never have enough. Leaf and let live.",
+      "description": "As a plant enthusiast and a love for all things green, I created this full stack MERN e-commerce site as a temporary plant addiction fix. It features login authentication, user/order/product management and also payment methods with PayPal via Stripe. You can now buy ALL the plants because one can never have enough. Leaf and let live.",
       "link": "https://folia-app.herokuapp.com/",
       "github": "https://github.com/d00d1e/folia",
-      "stack": ["MERN"],
-      "category": ["all", "frontend", "backend"]
+      "stack": ["Mongoose | Express | React | Node"],
+      "category": ["all", "frontend", "backend"],
+      "date": "February 2021",
+      "featured": true
     },
     {
-      "_id": "project8",
+      "_id": "meetup",
       "title": "Meetup",
       "imageUrl": "meetupapp.jpg",
       "caption": "Progressive Web App",
       "description": "This serverless, progressive web app is built with React, implementing test driven development. I use AWS Lambda as the serverless compute service as well as the MeetupAPI to fetch upcoming events for a selected city.",
       "link": "https://d00d1e.github.io/meetupApp/",
       "github": "https://github.com/d00d1e/meetupApp",
-      "stack": ["React | AWS"],
-      "category": ["all", "frontend"]
+      "stack": ["React | AWS | API"],
+      "category": ["all", "frontend"],
+      "date": "June 2020",
+      "featured": false
     },
     {
-      "_id": "project6",
+      "_id": "eatme-recipes",
       "title": "eatMe Recipes",
       "imageUrl": "eatmeapp.jpg",
       "caption": "Recipe Search App",
       "description": "I love to eat AND I love to cook. This recipe app makes it easy to find recipes for creating the perfect meals. Built with vanilla javascript, I use the Edamam API to fetch recipe data via axios. Hungry? Let's cook!",
       "link": "https://d00d1e.github.io/eatme-app/",
       "github": "https://github.com/d00d1e/eatme-app",
-      "stack": ["React | Edamam API"],
-      "category": ["all", "frontend"]
+      "stack": ["React | API"],
+      "category": ["all", "frontend"],
+      "date": "March 2021",
+      "featured": false
     }
 
   ]

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Fade from "react-reveal";
+import { Bounce, Slide } from "react-reveal";
 import Typical from "react-typical";
 import emailjs from "emailjs-com";
 
@@ -39,70 +39,64 @@ export default function Contact() {
 
   return (
     <section id="contact">
+      <Typical
+        className="text-center title outline mx-auto pt-5"
+        steps={["Contact", 3000]}
+        loop={1}
+        wrapper="h1"
+      />
+      <p className="caption text-center">Let's work together!</p>
       <div className="container-fluid contact-container my-auto">
-        <h1 className="outline mb-5">
-          <Typical
-            className="text-center"
-            steps={["Let's connect! ☺︎", 3000]}
-            loop={1}
-          />
-        </h1>
         {showMessage && (
           <p className="sent-message text-center fixed">{message}</p>
         )}
-        <form className="row contact-form mx-auto my-auto" onSubmit={sendEmail}>
-          <Fade>
+        <form className="row contact-form mx-auto" onSubmit={sendEmail}>
+          <Slide left>
             <div className="col-md-12">
               <div className="mb-3">
                 <input
                   type="text"
                   name="name"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Name"
+                  autoComplete="off"
                   required
                 />
               </div>
             </div>
-            <div className="col-md-12 ">
-              <div className="mb-3">
-                <input
-                  type="text"
-                  name="company"
-                  className="form-control boxshadow"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-            </div>
+
             <div className="col-md-12 ">
               <div className="mb-3">
                 <input
                   type="email"
                   name="email"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Email"
+                  autoComplete="off"
                   required
                 />
               </div>
             </div>
+          </Slide>
+          <Slide right>
             <div className="col-md-12">
               <div className="mb-3">
                 <textarea
-                  rows="4"
+                  rows="5"
                   cols="30"
                   name="message"
-                  className="form-control boxshadow"
+                  className="form-control"
                   placeholder="Message"
                   required
                 ></textarea>
               </div>
             </div>
-          </Fade>
-          <Fade bottom>
-            <button className="text-uppercase mt-5" type="submit">
+          </Slide>
+          <Bounce bottom>
+            <button className="button text-uppercase mt-5" type="submit">
               Send
             </button>
-          </Fade>
+          </Bounce>
         </form>
       </div>
     </section>
