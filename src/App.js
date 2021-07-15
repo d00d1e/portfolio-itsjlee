@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Home from "./views/Home";
@@ -12,11 +12,15 @@ import Page404 from "./views/Page404";
 import Layout from "./components/Layout";
 
 function App() {
+  // const location = useLocation();
+  // console.log(location);
+
   return (
     <div>
       <BrowserRouter>
-        <Layout>
-          <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
+          <Layout>
+            {/* <Switch location={location} key={location.pathname}> */}
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
@@ -25,8 +29,8 @@ function App() {
               <Route exact path="/contact" component={Contact} />
               <Route component={Page404} />
             </Switch>
-          </AnimatePresence>
-        </Layout>
+          </Layout>
+        </AnimatePresence>
       </BrowserRouter>
     </div>
   );

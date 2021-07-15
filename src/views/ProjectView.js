@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Typical from "react-typical";
+import { Slide } from "react-reveal";
+
+import { motion } from "framer-motion";
+import { pageVariants, transition } from "../assets/animations";
+
 import data from "../projects";
 
 export default function ProjectView(props) {
@@ -15,50 +21,70 @@ export default function ProjectView(props) {
     return null;
   }
 
-  const title = project.title;
-
   return (
-    <section id="project-view">
-      <div className="text-center">
-        <Typical
-          className="title outline pt-5"
-          steps={[title, 4000]}
-          loop={1}
-          wrapper="h1"
-        />
-        <p className="caption">{project.caption}</p>
-        <p className="pb-5">{project.date}</p>
-      </div>
-      <div className="project-view-container">
-        <img
-          className="boxshadow d-flex m-auto"
-          src={require(`../assets/img/projects/${project.imageUrl}`)}
-          alt={project.title}
-        />
-        <div className="project-view-description mx-auto p-5">
-          <p className="text-center font-weight-bold">{project.stack}</p>
-          <p>{project.description}</p>
-        </div>
-      </div>
-      <div className="project-view-buttons text-center pt-4 pb-5">
-        <a
-          href={project.github}
-          className="text-uppercase"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Code
-        </a>
+    <motion.div
+      id="project-view"
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      variants={pageVariants}
+      transition={transition}
+    >
+      <section>
+        <Link className="back-link text-uppercase pt-3 pb-3" to="/projects">
+          <i className="fas fa-chevron-left"></i> Back
+        </Link>
+        <hr />
+        <div className="container-fluid row m-auto pt-5">
+          <Slide left>
+            <div className="project-view-overview col-md-6 p-2">
+              <Typical
+                className="title"
+                steps={[project.title, 4000]}
+                loop={1}
+                wrapper="h2"
+              />
+              <p className="h5 pb-5">{project.caption}</p>
+              <p className="project-view-date text-right">{project.date}</p>
+              <img
+                className="boxshadow w-100"
+                src={require(`../assets/img/projects/${project.imageUrl}`)}
+                alt={project.title}
+                width="582px"
+                height="332px"
+              />
+              <div className="project-view-buttons text-uppercase pt-4 pb-5">
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <i className="fas fa-desktop"></i> Demo
+                </a>
+                <a href={project.github} target="_blank" rel="noreferrer">
+                  <i className="fas fa-code"></i> Code
+                </a>
+              </div>
+              <p className="project-view-description pb-5">
+                {project.description}
+              </p>
+              <h3 className="title">Technologies Used</h3>
+              <ul className="stack-list pl-4">
+                {project.stack.map((i, index) => (
+                  <li key={project._id + index}>{i}</li>
+                ))}
+              </ul>
+            </div>
+          </Slide>
 
-        <a
-          href={project.link}
-          className="text-uppercase"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Demo
-        </a>
-      </div>
-    </section>
+          <Slide right>
+            <div className="project-view-contents col-md-6 p-2 pl-4 pt-5">
+              {project.contents.map((content, i) => (
+                <div key={i}>
+                  <h4 className="title">{content.title}</h4>
+                  <p className="pb-5">{content.description}</p>
+                </div>
+              ))}
+            </div>
+          </Slide>
+        </div>
+      </section>
+    </motion.div>
   );
 }
