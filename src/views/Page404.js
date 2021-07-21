@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+import { pageVariants, transition } from "../assets/animations";
 
 export default function Page404() {
   return (
-    <Fade>
-      <section id="not-found" className="container my-auto text-center">
-        <h1>
-          4<span>☹︎</span>4
-        </h1>
-        <h4>Oops! Page Not Found.</h4>
+    <motion.div
+      id="page404"
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      variants={pageVariants}
+      transition={transition}
+    >
+      <section className="page404 container my-auto text-center">
+        <h1>404</h1>
+        <h4 className="p-2">Oops! Page Not Found.</h4>
         <p>
           Sorry but the page you are looking for does not exist, have been
           removed, or is temporarily unavailable
@@ -18,6 +24,6 @@ export default function Page404() {
           Home
         </Link>
       </section>
-    </Fade>
+    </motion.div>
   );
 }

@@ -1,8 +1,12 @@
-export const PageTransition = {
-  in: {
-    opacity: 1,
+export const pageVariants = {
+  initial: {
+    opacity: 0,
   },
-  out: {
+  enter: {
+    opacity: 1,
+    y: 0,
+  },
+  exit: {
     opacity: 0,
   },
 };
@@ -18,4 +22,6 @@ export const SlideDown = {
 
 export const transition = {
   duration: 1,
+  // y: { type: "spring", stiffness: 100, damping: 30 },
+  // opacity: { duration: 1 },
 };

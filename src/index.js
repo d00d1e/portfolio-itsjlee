@@ -8,11 +8,11 @@ import "./assets/css/animation.css";
 
 document.addEventListener("DOMContentLoaded", (e) => {
   ReactDOM.render(
+    // <React.StrictMode>
     <BrowserRouter>
-      <React.Fragment>
-        <App />
-      </React.Fragment>
+      <App />
     </BrowserRouter>,
+    // </React.StrictMode>,
     document.getElementById("root")
   );
 });

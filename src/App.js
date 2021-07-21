@@ -15,8 +15,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Layout>
-          <AnimatePresence exitBeforeEnter>
+        <AnimatePresence>
+          <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
@@ -25,8 +25,8 @@ function App() {
               <Route exact path="/contact" component={Contact} />
               <Route component={Page404} />
             </Switch>
-          </AnimatePresence>
-        </Layout>
+          </Layout>
+        </AnimatePresence>
       </BrowserRouter>
     </div>
   );

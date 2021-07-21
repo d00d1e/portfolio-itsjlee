@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Typical from "react-typical";
 
-import { motion } from "framer-motion";
-import { FadeDown, FadeIn, SlideDown, transition } from "../assets/animations";
-
 import Navbar from "./Navbar";
 import SocialBar from "./SocialBar";
 import Footer from "./Footer";
@@ -17,7 +14,7 @@ export default function Layout(props) {
   });
 
   return !loading ? (
-    <div>
+    <div id="layout">
       <Navbar />
       {props.children}
       <SocialBar />

@@ -1,42 +1,33 @@
 {
   "projects": [
     {
-      "_id": "world-of-orchids",
-      "title": "World of Orchids",
-      "imageUrl": "orchidlanding.jpg",
-      "caption": "Landing Page",
-      "description": "This is an information site for a fictional non-profit organization inspired by the American Orchid Society. Built with HTML, CSS and JS, it features responsive design.",
-      "link": "https://d00d1e.github.io/landing-page-orchids/",
-      "github": "https://github.com/d00d1e/landing-page-orchids",
-      "stack": ["HTML | CSS | JS"],
-      "category": ["all", "frontend"],
-      "date": "March 2021",
-      "featured": false
-    },
-    {
-      "_id": "lmau",
-      "title": "L'Mau",
-      "imageUrl": "shoppingcart.jpg",
-      "caption": "E-commerce site",
-      "description": "This is a full stack e-commerce shopping site created with React, REST API architecture, data management with mongoose and MongoDB, state management with Redux. Styled with MDN Bootstrap and hosted on Heroku.",
-      "link": "https://lmau-shopping-cart.herokuapp.com/",
-      "github": "https://github.com/d00d1e/react-shopping-cart",
-      "stack": ["Mongoose | Express | React | Redux | Node"],
-      "category": ["all", "frontend", "backend"],
-      "date": "October 2020",
-      "featured": false
-    },
-    {
-      "_id": "lights-out",
-      "title": "Lights Out",
-      "imageUrl": "lightsout.jpg",
-      "caption": "Puzzle Game",
-      "description": "This is a Lights Out inspired clone, a puzzle game consisting of a 5 by 5 grid of lights. Clicking the lights toggles itself and its adjacent lights. The goal of the game is to switch all of the lights off. Can you solve it? Created with React, neon flux css animation from a codepen by Thomas Trinca.",
-      "link": "https://d00d1e.github.io/react-lightsout/",
-      "github": "https://github.com/d00d1e/react-lightsout",
-      "stack": ["React"],
-      "category": ["all", "frontend"],
-      "date": "January 2021",
+      "_id": "todo",
+      "title": "Todo List",
+      "imageUrl": "todoapp.jpg",
+      "caption": "Progressive Web App",
+      "description": "Keep track of all your daily tasks and stay organized with this simple yet effective PWA todo list.",
+      "contents": [
+        {
+          "title": "Why a todo list?",
+          "description": "Trivial at first glance but beneath its simplicity, a todo app has immense value. Building it has taught me how to implement CRUD operations, manipulate the DOM, utilize the amazing powers of css and understand version control with git/github. All of which has laid the foundation for every one of my projects. Quite proud of this one."
+        },
+        {
+          "title": "Why a PWA?",
+          "description": "After hosting this application , I was able to access my todo list only when internet connection was available. What good is a todo list if it's not easily accessible at all times? This limited the number of users that will frequent the site. With the growing number of native applications, I decided to convert this into a progressive web app for that native app-like user experience. PWA's are network independent so it can be used offline  and also downloadable, making the app available on a users desktop or mobile homescreen for easier access."
+        }
+      ],
+      "link": "https://d00d1e.github.io/js-todo/",
+      "github": "https://github.com/d00d1e/js-todo",
+      "stack": [
+        "JS",
+        "PWA"
+      ],
+      "category": [
+        "all",
+        "JS",
+        "PWA"
+      ],
+      "date": "June 2020",
       "featured": false
     },
     {
@@ -44,66 +35,177 @@
       "title": "iFlix",
       "imageUrl": "movieapi.jpg",
       "caption": "Movie API",
-      "description": "This is a full stack movie web application utilizing server-side REST API architecture with Node/Express, data management with mongoose and MongoDB Atlas, client-side interface with REACT, styled with React Bootstrap. {testUser: cat, password: cat} ",
+      "description": "Browse movies and add them to your favorites list!",
+      "contents": [
+        {
+          "title": "Objective",
+          "description": "Build a client-side and a server-side component for a movies web application that will provide users with access to information about different movies, directors and genre. Users will be able to sign up, update personal information and create a list of their favorite movies."
+        },
+        {
+          "title": "Challenges",
+          "description": "Designing the REST API, setting up the database and creating the frontend of the application was the easier part of the project. Having the client-side communicate with the server-side proved to most challenging. Three months was spent debugging and trying to figure out why the backend is not rendering correctly in the frontend. After this setback, and also from sheer frustration, I decided to delete everything and start from scratch. This time around, while talking myself through each step of the creative process, I was able to finally see my mistake and move the project forward."
+        },
+        {
+          "title": "Solution",
+          "description": "This was my first full stack MERN project. There were so many new technologies to learn, many pieces to create and connect together that there are times where I found it difficult to see everything as a whole and figure out where my errors are coming from. After months just seeing red in the Chrome developer tools and trying to fix problems after problems, I almost gave up this project altogether. I ended up deleting the project and started everything over from scratch. This time around, everything was easier."
+        }
+      ],
       "link": "https://i-flix.herokuapp.com/client/",
       "github": "https://github.com/d00d1e/movie-api",
-      "stack": ["Mongoose | Express | React | Node"],
-      "category": ["all", "backend"],
+      "stack": [
+        "Mongoose",
+        "Express",
+        "React",
+        "Node",
+        "Bootstrap",
+        "Heroku"
+      ],
+      "category": [
+        "all",
+        "React",
+        "MERN"
+      ],
       "date": "January 2020",
       "featured": true
     },
     {
-      "_id": "daccord",
-      "title": "D'Accord",
-      "imageUrl": "daccordapp.jpg",
-      "caption": "Chat Application",
-      "description": "A Discord inspired app, D'Accord is a chat application created with Express, Node and Socket.io. It features real-time, bidirectional and event-based communication between the browser and the server with chatroom options. Happy Chatting!",
-      "link": "https://daccord-chat.herokuapp.com/",
-      "github": "https://github.com/d00d1e/daccord-chat-app",
-      "stack": ["HTML | CSS | JS | Socket"],
-      "category": ["all", "frontend"],
-      "date": "April 2021",
+      "_id": "lights-out",
+      "title": "Lights Out",
+      "imageUrl": "lightsout.jpg",
+      "caption": "Puzzle Game",
+      "description": "This is a Lights Out inspired clone, a puzzle game consisting of a 5 by 5 grid of lights. Clicking a light toggles itself and its adjacent lights. The goal of the game is to switch off all the lights.",
+      "contents": [
+        {
+          "title": "Idea",
+          "description": "Build a clone of the 1995 Lights Out puzzle game by Tiger Electronics using React and the neon flux css animation from a codepen by Thomas Trinca ."
+        },
+        {
+          "title": "Implementation",
+          "description": "As a homage to my childhood gaming days, I have built quite a few games using vanilla javacript, such as snake, tetris and hangman but I have included this particular game because I built it using my favorite framework, React. I am particularly fond of compartmentalizing the components of a game, as well as keeping the css modular. As a game evolves, I can add or remove modules as necessary, making it easier to come back to and modify."
+        }
+      ],
+      "link": "https://d00d1e.github.io/react-lightsout/",
+      "github": "https://github.com/d00d1e/react-lightsout",
+      "stack": [
+        "React"
+      ],
+      "category": [
+        "all",
+        "React"
+      ],
+      "date": "October 2018",
       "featured": false
     },
     {
       "_id": "folia",
       "title": "Folia",
       "imageUrl": "folia.jpg",
-      "caption": "Online PLant Shop",
-      "description": "As a plant enthusiast and a love for all things green, I created this full stack MERN e-commerce site as a temporary plant addiction fix. It features login authentication, user/order/product management and also payment methods with PayPal via Stripe. You can now buy ALL the plants because one can never have enough. Leaf and let live.",
+      "caption": "E-commerce site",
+      "description": "As a plant enthusiast and a love for all things green, I created this ecommerce site to satiate my plant addiction. You can now buy ALL the plants because one can never have enough.",
+      "contents": [
+        {
+          "title": "Goal",
+          "description": "Create a full stack MERN e-commerce site featuring login authentication, user/order/product management and payment methods."
+        },
+        {
+          "title": "Limitations",
+          "description": "Initally this project started out as shopping cart where users could browse items, add items to their cart and checkout with their name, email and address. But it did not offer the full experience of online shopping where users needed to login to checkout, pay, view past orders and check order status."
+        },
+        {
+          "title": "Results",
+          "description": "I recreated this application with a backend server and loaded products from a database. I then encorporated the shopping cart into its UI. Using redux to manage the state of users, products and cart items, I am able to track the flow of items from the database, first from the product page, to the cart, to checkout and finally to order history. I also utilized the PayPal SDK as a way to simulate payment during checkout."
+        }
+      ],
       "link": "https://folia-app.herokuapp.com/",
       "github": "https://github.com/d00d1e/folia",
-      "stack": ["Mongoose | Express | React | Node"],
-      "category": ["all", "frontend", "backend"],
+      "stack": [
+        "Mongoose",
+        "Express",
+        "React",
+        "Redux",
+        "Node",
+        "PayPal SDK",
+        "Heroku"
+      ],
+      "category": [
+        "all",
+        "MERN",
+        "Redux"
+      ],
       "date": "February 2021",
       "featured": true
     },
     {
-      "_id": "meetup",
-      "title": "Meetup",
-      "imageUrl": "meetupapp.jpg",
-      "caption": "Progressive Web App",
-      "description": "This serverless, progressive web app is built with React, implementing test driven development. I use AWS Lambda as the serverless compute service as well as the MeetupAPI to fetch upcoming events for a selected city.",
-      "link": "https://d00d1e.github.io/meetupApp/",
-      "github": "https://github.com/d00d1e/meetupApp",
-      "stack": ["React | AWS | API"],
-      "category": ["all", "frontend"],
-      "date": "June 2020",
+      "_id": "world-of-orchids",
+      "title": "World of Orchids",
+      "imageUrl": "orchidlanding.jpg",
+      "caption": "Landing Page",
+      "description": "World of Orchids landing page inspired by the American Orchid Society.",
+      "contents": [
+        {
+          "title": "Project Aim",
+          "description": "Design and build a static but responsive website to showcase my css skills."
+        },
+        {
+          "title": "Shortcomings",
+          "description": "The project was build mobile-first. It worked on desktop, it worked on mobile devices, the styling I was quite proud of and all was well. But when I ran a Google Lighthouse audit, it turns out that my site was not at all \"well\". It was slow to load, it was not designed with accessibility in mind and it was not SEO optimized."
+        },
+        {
+          "title": "The Perfect Score",
+          "description": "After seeing the dismal Lighthouse report, I set out to create the website that will score 100% across all categories of the audit. I made sure to follow best practices, made the site accessible, resized and compresed all images to improve overall perfomance and lastly improved the site's SEO. Creating the perfect score website ensures that what I am building is of the highest quality."
+        }
+      ],
+      "link": "https://d00d1e.github.io/landing-page-orchids/",
+      "github": "https://github.com/d00d1e/landing-page-orchids",
+      "stack": [
+        "HTML5",
+        "CSS",
+        "JS"
+      ],
+      "category": [
+        "all",
+        "HTML5",
+        "CSS",
+        "JS"
+      ],
+      "date": "March 2021",
       "featured": false
     },
     {
-      "_id": "eatme-recipes",
-      "title": "eatMe Recipes",
-      "imageUrl": "eatmeapp.jpg",
-      "caption": "Recipe Search App",
-      "description": "I love to eat AND I love to cook. This recipe app makes it easy to find recipes for creating the perfect meals. Built with vanilla javascript, I use the Edamam API to fetch recipe data via axios. Hungry? Let's cook!",
-      "link": "https://d00d1e.github.io/eatme-app/",
-      "github": "https://github.com/d00d1e/eatme-app",
-      "stack": ["React | API"],
-      "category": ["all", "frontend"],
-      "date": "March 2021",
-      "featured": false
+      "_id": "pokédex",
+      "title": "Pokedex",
+      "imageUrl": "pokedex.jpg",
+      "caption": "Gen 1. Pokémon Database",
+      "description": "Click on a Pokémon card to see a detailed page of your favorite pokemon. View stats, special attacks, evolution, and more! Gotta Catch 'Em All!",
+      "contents": [
+        {
+          "title": "Project Idea",
+          "description": "Build my own pokedex for the original 151 pokemon using data from the PokéAPI."
+        },
+        {
+          "title": "Limitations of a JS Pokedex",
+          "description": "When I learning how to use APIs, one of the projects I built was a pokedex. I implemented it using vanilla javascript and later added jQuery. But my application didn't offer the best user interface. It was a page full of buttons. Users would need to scroll through the entire list of pokemon just to find the one they are looking for. It would be ideal to dedicate an entire page to each pokemon instead of opening a modal."
+        },
+        {
+          "title": "Solution",
+          "description": "Switching from JS to React, data from the API is rendered dynamically to create a better UI when viewing each pokemon. Users were able to search for a pokemon and view its stats on a separate page. I also used a different library to render higher quality pokemon sprites to give my application a more modern feel. The scalability of React also meant that I could slowly include the next 7 generations of pokemon as well."
+        }
+      ],
+      "link": "https://d00d1e.github.io/react-pokedex/",
+      "github": "https://github.com/d00d1e/react-pokedex",
+      "stack": [
+        "React",
+        "PokéAPI",
+        "Bootstrap",
+        "styled-components"
+      ],
+      "category": [
+        "all",
+        "React",
+        "API"
+      ],
+      "date": "September 2020",
+      "featured": true
     }
-
   ]
 }

@@ -18,7 +18,8 @@ export default function Navbar() {
     >
       <div className="container-fluid w-75">
         <NavLink className="navbar-brand" to="/">
-          <img src={logo} alt="logo" /> <span>Juliana Y. Lee</span>
+          <img src={logo} alt="logo" width="64px" height="53px" />{" "}
+          <span>Juliana Y. Lee</span>
         </NavLink>
         <button
           className="navbar-toggler"

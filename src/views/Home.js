@@ -5,7 +5,7 @@ import { Slide, Bounce } from "react-reveal";
 import Typical from "react-typical";
 
 import { motion } from "framer-motion";
-import { PageTransition, transition } from "../assets/animations";
+import { pageVariants, transition } from "../assets/animations";
 
 import Bubbles from "../components/Bubbles";
 
@@ -13,17 +13,18 @@ export default function Home() {
   return (
     <motion.div
       id="home"
-      initial="out"
-      animate="in"
-      exit="out"
-      variants={PageTransition}
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      variants={pageVariants}
       transition={transition}
     >
       <Bubbles />
       <section>
-        <div className="home-content container my-auto">
+        <div className="home-content my-auto">
           <Slide top>
-            <h2 className="smiley text-left">✌︎☺︎</h2>
+            {/* <h2 className="smiley text-left">☺︎</h2> */}
+            <h2 className="smiley text-left">Hi!</h2>
           </Slide>
           <Slide left>
             <h1 className="text-left">
