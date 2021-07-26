@@ -1,14 +1,9 @@
 import React from "react";
-import { Fade } from "react-reveal";
 
 export default function Footer() {
   return (
-    <Fade bottom>
-      <footer className="footer mx-auto my-auto">
-        <div className="text-center">
-          <p className="footer-text text-uppercase">&copy;2021 itsjlee</p>
-        </div>
-      </footer>
-    </Fade>
+    <footer className="container-fluid text-center mx-auto my-auto">
+      <p className="text-uppercase">&copy;2021 itsjlee</p>
+    </footer>
   );
 }
