@@ -4,7 +4,7 @@
       "_id": "todo",
       "title": "Todo List",
       "imageUrl": "todoapp.jpg",
-      "caption": "Progressive Web App",
+      "caption": "PWA",
       "description": "Keep track of all your daily tasks and stay organized with this simple yet effective PWA todo list.",
       "contents": [
         {
@@ -175,7 +175,7 @@
       "_id": "pokédex",
       "title": "Pokedex",
       "imageUrl": "pokedex.jpg",
-      "caption": "Gen 1. Pokémon Database",
+      "caption": "Pokémon Database",
       "description": "Click on a Pokémon card to see a detailed page of your favorite pokemon. View stats, special attacks, evolution, and more! Gotta Catch 'Em All!",
       "contents": [
         {

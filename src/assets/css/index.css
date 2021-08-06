@@ -3,8 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
 @font-face {
   font-family: "8bitOperator";
-  src: local("8bitOperator"),
-    url("../fonts/8bitOperatorPlus8-Regular.ttf") format("truetype");
+  src: local("8bitOperator"), url("../fonts/8bitOperatorPlus8-Regular.ttf") format("truetype");
   font-weight: normal;
   font-display: swap;
 }
@@ -151,8 +150,7 @@ img {
   background: #fff url("../img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
+  background-position: center;
   z-index: 1;
 }
 
@@ -163,7 +161,6 @@ img {
   background: #fff url("../img/bg-img2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
 }
 
