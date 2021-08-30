@@ -7,7 +7,7 @@ import Typical from "react-typical";
 import { motion } from "framer-motion";
 import { pageVariants, transition } from "../assets/animations";
 
-import Bubbles from "../components/Bubbles";
+// import Bubbles from "../components/Bubbles";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       variants={pageVariants}
       transition={transition}
     >
-      <Bubbles />
+      {/* <Bubbles /> */}
       <section>
         <div className="home-content my-auto">
           <Slide top>
