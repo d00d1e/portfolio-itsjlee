@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
 @font-face {
   font-family: "8bitOperator";
-  src: local("8bitOperator"), url("../fonts/8bitOperatorPlus8-Regular.ttf") format("truetype");
+  src: local("8bitOperator"),
+    url("../fonts/8bitOperatorPlus8-Regular.ttf") format("truetype");
   font-weight: normal;
   font-display: swap;
 }
@@ -713,10 +714,6 @@ footer p {
   .social-media > a {
     margin-right: 0.5rem;
   }
-
-  .social-media > a > img {
-    height: 2.2rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -728,13 +725,17 @@ footer p {
     width: 90%;
   }
 
-  .social-media a {
+  .social-media > a {
     margin-right: 1.3rem;
   }
 
   .navbar-container {
     width: 100% !important;
     padding: 0 1rem 0 1rem !important;
+  }
+
+  .social-media > a > img {
+    height: 2.2rem;
   }
 }
 
